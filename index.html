@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Mobiles devices 375px and up-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/menus.css">
+  <!--Tablets devices 768px and up-->
+  <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/styletablets.css">
+  <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/menustablets.css">
+  <!--Tablets devices 1024px and up-->
+  <link rel="stylesheet" media="screen and (min-width: 1024px)" href="css/stylelaptop.css">
+  <link rel="stylesheet" media="screen and (min-width: 1024px)" href="css/menuslaptop.css">
+  <!--Extralarge devices 1920px and up-->
+  <link rel="stylesheet" media="screen and (min-width: 1920px)" href="css/stylextlarge.css">
+  <link rel="stylesheet" media="screen and (min-width: 1920px)" href="css/menusxtlarge.css">
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap');
+  </style>
+  <script src="https://kit.fontawesome.com/f2925b3971.js" crossorigin="anonymous"></script>
+  <title>Ohmyfood</title>
+</head>
+<body>
+  <!--Header-->
+  <header>
+    <!--loader-->
+    <div class="loader">
+      <span class="lettre">o</span>
+      <span class="lettre">h</span>
+      <span class="lettre">m</span>
+      <span class="lettre">y</span>
+      <span class="lettre">f</span>
+      <span class="lettre">o</span>
+      <span class="lettre">o</span>
+      <span class="lettre">d</span>
+    </div>
+    <!--Logo-->
+    <div class="bloclogoindex">
+      <img src="images/logo/ohmyfood.png" alt="Logo ohmyfood noir">
+    </div>
+    <!--Bloc Recherche lieu + ombré-->
+    <div class="contenantrecherche">
+      <div class="blocrecherche">
+        <div class="rech1">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <div class="rech2">
+          <form>
+            <input type="text" id="destination" name="destination" placeholder="Paris, Belleville">
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--Bloc nav explorer-->
+    <div class="blocnav">
+      <h1>Réservez le menu qui vous convient</h1>
+      <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+      <!--Bouton Nav + dégradé +  ombré-->
+      <div class="btnexplorer">
+        <a href="#restaurants">
+          <p>Explorer nos restaurants</p>
+        </a>
+      </div>
+    </div>
+    <!--3 Filtres-->
+    <div class="conteneurfiltres">
+      <h2>Fonctionnement</h2>
+      <div class="conteneurblocfiltre">
+        <div class="blocfiltre">
+          <div class="rondoblongue">
+            <p>1</p>
+          </div>
+          <div class="oblongue">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <p>
+              <a href="#restaurants">Choisissez un restaurant</a>
+            </p>
+          </div>
+        </div>
+        <div class="blocfiltre">
+          <div class="rondoblongue">
+            <p>2</p>
+          </div>
+          <div class="oblongue">
+            <i class="fa-solid fa-list"></i>
+            <p>
+              <a href="menu1.html">Composez votre menu</a>
+            </p>
+          </div>
+        </div>
+        <div class="blocfiltre">
+          <div class="rondoblongue">
+            <p>3</p>
+          </div>
+          <div class="oblongue">
+            <i class="fa-solid fa-store"></i>
+            <p>
+              <a href="#">Dégustez au restaurant</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--Main-->
+  <main class="conteneurrestos">
+    <h2 id="restaurants">Restaurants</h2>
+    <div class="conteneurblocresto">
+      <div class="blocresto">
+        <a href="menu1.html">
+          <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+          <div class="blocnew">
+            <p>Nouveau</p>
+          </div>
+          <div class="legende">
+            <h3>La palette du goût</h3>
+            <h4>Ménilmontant</h4>
+          </div>
+          <!-- Coeur hover + dégradé + main-->
+          <div class="coeur1">
+            <a href="#">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+          <div class="coeur2">
+            <a href="#">
+              <i class="fa-solid fa-heart"></i>
+            </a>
+          </div>
+        </a>
+      </div>
+      <div class="blocresto">
+        <a href="menu2.html">
+          <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La palette du goût">
+          <div class="blocnew">
+            <p>Nouveau</p>
+          </div>
+          <div class="legende">
+            <h3>La note enchantée</h3>
+            <h4>Charonne</h4>
+          </div>
+          <!-- Coeur hover + dégradé + main-->
+          <div class="coeur1">
+            <a href="#">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+          <div class="coeur2">
+            <a href="#">
+              <i class="fa-solid fa-heart"></i>
+            </a>
+          </div>
+        </a>
+      </div>
+      <div class="blocresto">
+        <a href="menu3.html">
+          <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="La palette du goût">
+          <div class="legende">
+            <h3>À la française</h3>
+            <h4>Cité Rouge</h4>
+          </div>
+          <!-- Coeur hover + dégradé + main-->
+          <div class="coeur1">
+            <a href="#">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+          <div class="coeur2">
+            <a href="#">
+              <i class="fa-solid fa-heart"></i>
+            </a>
+          </div>
+        </a>
+      </div>
+      <div class="blocresto">
+        <a href="menu4.html">
+          <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="La palette du goût">
+          <div class="legende">
+            <h3>Le délice des sens</h3>
+            <h4>Folie-Méricourt</h4>
+          </div>
+          <!-- Coeur hover + dégradé + main-->
+          <div class="coeur1">
+            <a href="#">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </div>
+          <div class="coeur2">
+            <a href="#">
+              <i class="fa-solid fa-heart"></i>
+            </a>
+          </div>
+        </a>
+      </div>
+    </div>
+  </main>
+  <!--footer-->
+  <footer>
+    <div class="logofooter">
+      <!--logo pixelisé voir si la typo c'est mieux-->
+      <img src="images/logo/ohmyfood.png" alt="Logo ohmyfood blanc">
+    </div>
+    <div class="listefooter">
+      <ul>
+        <li>
+          <i class="fa-solid fa-utensils"></i>
+          <a href="#">
+            <p>Proposer un restaurant</p>
+          </a>
+        </li>
+        <li>
+          <i class="fa-solid fa-handshake-angle"></i>
+          <a href="#">
+            <p>Devenir partenaire</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p>Mentions légales</p>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:email@ohmyfood.com">
+            <p>Contact</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <!--Petite animation javascript pour charger le loader ???-->
+</body>
+
+</html>

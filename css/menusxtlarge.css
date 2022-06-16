@@ -1,0 +1,77 @@
+/*Medium devices (tablets, 1920px and up)*/
+@media screen and (min-width: 1920px)
+{
+}
+
+/*la taille des contenus tient compte du border et du padding*/
+*
+
+{
+	box-sizing: border-box;
+}
+
+body
+{
+	width: 1920px;
+}
+/* header */
+.bloclogomenu
+{
+	width: 1800px;
+	height: 140px;
+	margin-left:410px;
+}
+.logomenu{
+    width: 1800px;
+    height: 95px;
+    padding-top: 45px;
+}
+.logomenu img{
+	width: 15%;
+}
+.logomenu i
+{
+	margin-left: 60px;
+}
+.imgmenu img
+{
+	width: 1920px;
+	height: 250px;
+	object-fit: cover;
+	opacity: 1;
+	z-index: 0;
+}
+/* Main */
+
+main .conteneurmenus1,  .conteneurmenus3, .conteneurmenus4{
+	height: 800px;
+}
+main  .conteneurmenus2
+{
+	height: 800px;
+}
+.titremenu h1
+{	width: 1500px;
+	font-size: 35px;
+	padding-left: 350px;
+}
+.coeur3
+{
+	margin-left: 1140px;
+	margin-top: -65px;
+}
+.conteneurblocemnu{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-left: 200px;
+	margin-right: 200px;
+	
+}
+.titreplats
+{
+	margin-left: 280px;
+	border-bottom: 2px solid #99e2d0;
+	width: 40px;
+	margin-top: 30px;
+}

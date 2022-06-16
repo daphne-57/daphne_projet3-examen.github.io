@@ -1,0 +1,334 @@
+
+/*Medium devices (tablets, 768px and up)*/
+@media screen and (min-width: 768px)
+{
+}
+/*la taille des contenus tient compte du border et du padding*/
+*
+{
+	box-sizing: border-box;
+}
+
+body
+{
+	width: 768px;
+}
+/* loader */
+.loader{
+	width: 768px;
+}
+
+/* header */
+.bloclogoindex
+{
+	width: 700px;
+	height: 85px;
+	text-align: left;
+	margin-left:110px;
+}
+.bloclogoindex img
+{
+	max-width: 30%;
+	height: auto;
+	padding-top: 30px;
+
+}
+/* conteneur recherche lieu location*/
+/* => Revoir les dimensions du texte et le centrage quand on tape*/
+.contenantrecherche
+{
+	margin: auto;
+	height: 45px;
+	background: #eaeaea;
+	/* ombre portée */
+	box-shadow: inset 0px 3px 10px 0px #898989;
+	border-radius: 25px;
+	width: 280px;
+	margin-bottom: 50px;
+	margin-left: 360px;
+	margin-top: -40px;
+}
+
+.blocrecherche
+{
+	flex-direction: row;
+	margin-left: 40px;
+}
+
+.rech1
+{
+	width: 30px;
+	margin-left: 40px;
+}
+
+.rech1 i
+{
+	width: 20px;
+	height: 50px;
+	padding-top: 17px;
+}
+
+.rech2 p
+{
+	font-size: 18px;
+	width: 80px;
+}
+
+.rech2 input
+{
+	border-style: none;
+	font-size: 16px;
+	border: none;
+	outline: none;
+}
+
+/* conteneur nav explorer */
+.blocnav
+{
+	height: 200px;
+	background: #f6f6f6;
+	padding-top: 25px;
+}
+
+.blocnav h1
+{
+	width: 600px;
+	text-align: left;
+	font-size: 24px;
+	font-weight: 700;
+	margin-left: 40px;
+}
+
+.blocnav p
+{
+	width:600px;
+	font-size: 18px;
+	font-weight: 300;
+	padding-top: 10px;
+	text-align: left;
+	margin-left: 40px;
+}
+
+div .btnexplorer
+{
+	height: 50px;
+	width: 260px;
+	border-radius: 25px;
+	background: #9356dc;
+	z-index: 0;
+	/* dégradé dans un bloc */
+	background: linear-gradient(#FF79DA, #9356dc);
+	/* ombre portée */
+	box-shadow: 0px 3px 10px 0px #898989;
+	text-align: left;
+	margin-left: 40px;
+}
+.btnexplorer :hover
+{
+	height: 50px;
+	width: 260px;
+	border-radius: 25px;
+	background: #9356dc;
+	/* dégradé dans un bloc */
+	background: linear-gradient(#fd97e0, #aa7be2);
+	/* ombre portée */
+	box-shadow: 0px 3px 10px 0px #696969;
+	padding-left: 40px;
+}
+
+.btnexplorer p
+{
+	width: 200px;
+	font-weight: 400;
+	color: #fff;
+	padding-top: 15px;
+	z-index: 10;
+	font-size: 16px;
+
+}
+.btnexplorer p :hover{
+
+}
+.btnexplorer a
+{
+	text-decoration: none;
+}
+
+/* conteneur filtres */
+.conteneurfiltres
+{
+	height: 400px;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+.conteneurfiltres h2
+{
+	font-size: 24px;
+	font-weight: 700;
+	margin-top: 40px;
+	padding-top: 0px;
+	margin-left: 40px;
+}
+
+.blocfiltre
+{
+	height: 75px;
+	margin-bottom:40px;
+	justify-content: center;
+	align-items: center;
+}
+
+.blocfiltre :hover
+{
+	background: #f5edff;
+	border-radius: 25px;
+	color: #000000;
+}
+
+.blocfiltre :hover i
+{
+	color: #9356dc;
+}
+
+/* Attention fond bleu au clic à enlever*/
+.rondoblongue
+{
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	color: #fff;
+	background-color: #9356dc;
+	margin-left: 20px;
+	z-index: 1;
+	margin-top: 5px;
+}
+
+.rondoblongue p
+{
+	z-index: 10;
+	padding-left: 8px;
+	padding-top: 4px;
+	margin: auto;
+	font-size: 14px;
+}
+
+.oblongue
+{
+	height: 75px;
+	width: 400px;
+	background: #f6f6f6;
+	border-radius: 25px;
+	box-shadow: 0px 5px 20px -2px #C2C2C2;
+	z-index: 0;
+	margin-left: -10px;
+	display: flex;
+	flex-direction: row;
+}
+
+.oblongue a
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+.oblongue i
+{
+	padding-top: 30px;
+	padding-left: 80px;
+	font-size: 18px;
+	color: #777;
+}
+
+.oblongue p
+{
+	font-weight: 500;
+	font-size: 16px;
+	padding-left: 30px;
+	width: 400px;
+	padding-top: 15px;
+	text-decoration: none;
+}
+
+/* Main */
+.conteneurrestos
+{
+	height: 1320px;
+}
+
+.conteneurrestos h2
+{
+	margin-left: 20px;
+	padding-top: 40px;
+}
+
+.blocresto
+{
+	width: 435px;
+	margin-bottom: 50px;
+}
+
+.blocresto img
+{
+	width: 435px;
+	height: 175px;
+	object-fit: cover;
+	border-radius: 25px 25px 0px 0px;
+}
+
+.blocnew
+{
+	margin-left: 340px;
+}
+
+/* Position absolute Coeur hover + dégradé + main +  */
+.coeur1 a
+{
+	margin-left: 380px;
+}
+
+.coeur1:hover
+{
+	opacity: 0;
+}
+
+/* Vous employez des fonctions qui sont propres à certains #Navigateurs, comme #FireFox ou autres. Ce sont les arrondis, les dégradés et d'autres aspects. => erreurs W3C */
+.coeur2
+{
+	margin-left: 380px;
+}
+
+/* Footer */
+footer
+{
+	height: 160px;
+}
+
+.logofooter img
+{
+	width: 25%;
+	padding-top: 40px;
+	padding-left: 40px;
+	filter: invert(100%)
+}
+.listefooter ul
+{
+	width: 728px;
+	list-style-type: none;
+	padding-top: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.listefooter ul li
+{
+	color: #fff;
+	display: flex;
+	line-height: 100%;
+	padding-left: 20px;
+}
+
+.listefooter i
+{
+	padding-right: 15px;
+}

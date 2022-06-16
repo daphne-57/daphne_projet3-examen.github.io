@@ -1,0 +1,87 @@
+/*Medium devices (tablets, 768px and up)*/
+@media screen and (min-width: 768px)
+{
+}
+
+/*la taille des contenus tient compte du border et du padding*/
+*
+
+{
+	box-sizing: border-box;
+}
+body
+{
+	width: 768px;
+}
+/* header */
+.bloclogomenu
+{
+	width: 600px;
+	height: 155px;
+}
+.logomenu {
+	width: 600px;
+	height: 120px;
+    padding-top: 55px;
+	margin-left: 200px;
+}
+.logomenu img{
+	width: 40%;
+}
+.logomenu i
+{
+	position: absolute;
+	margin-top: -30px;
+	font-size: 20px;
+	color: #000;
+	margin-left: 60px;
+}
+/* Main */
+.imgmenu img
+{
+	width: 768px;
+	height: 250px;
+	object-fit: cover;
+	opacity: 1;
+	z-index: 0;
+}
+
+main .conteneurmenus1,  .conteneurmenus3, .conteneurmenus4{
+	height: 1050px;
+}
+main  .conteneurmenus2
+{
+	height: 1050px;
+}
+.titremenu h1
+{	width: 700px;
+	font-size: 35px;
+	text-align: center;
+
+}
+.coeur3 {
+	width: 25px;
+	height:25px;
+	margin-top: -65px;
+	margin-left: 550px;
+
+}
+.conteneurblocemnu{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	
+}
+.blocmenu
+{
+	height: 75px;
+	width: 355px;
+	background: #fff;
+	border-radius: 15px;
+	box-shadow: 0px 5px 20px -2px #C2C2C2;
+	margin-left: 10px;
+	margin-top: 20px;
+	z-index: 0;
+	opacity: 1;
+	margin-right: 10px;
+}

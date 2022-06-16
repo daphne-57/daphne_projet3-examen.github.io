@@ -1,0 +1,180 @@
+
+/*Medium devices (desktop large, 1920px and up)*/
+@media screen and (min-width: 1920px)
+{
+}
+
+
+/*la taille des contenus tient compte du border et du padding*/
+*
+{
+	box-sizing: border-box;
+}
+
+body
+{
+	width: 1920px;
+}
+/* loader */
+.loader{
+	width: 1920px;
+}
+.bloclogoindex
+{
+	width: 1000px;
+	height: 95px;
+	padding-top: 20px;
+}
+.bloclogoindex img
+{
+	max-width: 25%;
+	height: auto;
+	margin-left: 510px;
+}
+/* conteneur recherche lieu location*/
+.contenantrecherche
+{
+	margin-left: 950px;
+	margin-top: -45px;
+}
+
+/* conteneur nav explorer */
+.blocnav h1
+{
+	margin: auto;
+	text-align: center;
+}
+
+.blocnav p
+{
+	margin: auto;
+	text-align: center;
+}
+div .btnexplorer
+{
+	height: 50px;
+	width: 260px;
+	border-radius: 25px;
+	background: #9356dc;
+	z-index: 0;
+	/* dégradé dans un bloc */
+	background: linear-gradient(#FF79DA, #9356dc);
+	/* ombre portée */
+	box-shadow: 0px 3px 10px 0px #898989;
+	text-align: left;
+	margin-left: 40px;
+}
+.btnexplorer :hover
+{
+	height: 50px;
+	width: 260px;
+	border-radius: 25px;
+	background: #9356dc;
+	/* dégradé dans un bloc */
+	background: linear-gradient(#fd97e0, #aa7be2);
+	/* ombre portée */
+	box-shadow: 0px 3px 10px 0px #696969;
+	padding-left: 0px;
+}
+div .btnexplorer
+{
+	margin: auto;
+	text-align: center;
+}
+
+
+
+/* conteneur filtres */
+.conteneurfiltres
+{
+	height: 200px;
+}
+
+.conteneurblocfiltre
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-left: 190px;
+	margin-right: 190px;
+}
+
+/* Main */
+.conteneurrestos
+{
+	height: 450px;
+}
+
+.conteneurblocresto
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-left: 80px;
+	margin-right: 80px;
+	padding-top: 30px;
+}
+
+.blocresto
+{
+	height: 255px;
+	width: 335px;
+}
+
+.blocresto img
+{
+	width: 335px;
+	height: 175px;
+}
+
+.blocnew
+{
+	margin-left: 235px;
+	margin-top: -165px;
+}
+
+/* Position absolute Coeur hover + dégradé + main +  */
+.coeur1 a
+{
+	margin-left: 285px;
+}
+
+/* Vous employez des fonctions qui sont propres à certains #Navigateurs, comme #FireFox ou autres. Ce sont les arrondis, les dégradés et d'autres aspects. => erreurs W3C */
+.coeur2
+{
+	margin-left: 285px;
+}
+/* Footer */
+footer
+{
+	height: 140px;
+	display: flex;
+	flex-direction: row;
+}
+div.logofooter
+{
+	width: 250px;
+}
+
+.logofooter img
+{
+	width: 100%;
+	padding-top: 60px;
+	margin-left: 350px;
+	margin-right: 0px;
+	padding-right: 0px;
+	filter: invert(100%);
+}
+
+.listefooter ul
+{
+	width: 1200px;
+	padding-top: 50px;
+	padding-left: 400px;
+}
+
+.listefooter ul li
+{
+	padding-left: 40px;
+}
