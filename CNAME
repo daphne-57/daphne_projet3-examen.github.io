@@ -1,1 +1,1 @@
-www.daphne-lab.com
+$ echo "www.daphne-lab.com" > source/CNAME
