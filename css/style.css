@@ -19,6 +19,7 @@ body
 /* loader */
 .loader
 {
+	visibility: visible;
 	z-index: 999;
 	opacity: 1;
 	width: 375px;
@@ -35,68 +36,6 @@ body
 	/* a voir couleur + transparence*/
 	background-color: rgb(255,255,255,1);
 	animation: disappear 3s 450ms forwards;
-}
-.loader:active{
-	width: 0px;
-	height: 0px;
-	animation:disappear 0s forwards;
-	animation-play-state: paused;
-	background-color: rgb(255,255,255,0);
-	display: none;
-	background:none;
-	position: relative;
-	z-index: 0;
-	opacity: 0;
-}
-@-webkit-keyframes loading {
-  0%, 100% {
-    opacity: 1;
-  }
-}
-@keyframes loading {
-  0%, 100% {
-    opacity: 1;
-  }
-}
-
-@keyframes disappear {
-  0%{
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-	height: 0px;
-	}
-}
-@-webkit-keyframes disappear {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-	height: 0px;
-  }
-}
-.loader span {
-	width: auto;
-	height: 30px;
-	z-index: 999;
-	opacity: 1;
-	color: #9356DC;
-	font-size: 50px;
-	margin-bottom: 40px;
-	font-family: 'Shrikhand', cursive;
-	display: flex;
-	animation-name: flash;
-	animation-duration: 3s;
-	animation-iteration-count:infinite;
-	animation-play-state:running;
 }
 @keyframes flash
 {
@@ -117,6 +56,57 @@ body
 		color: #FF79DA;
 		text-shadow: 0 0 7px #322442;
 	}
+}
+@-webkit-keyframes loading {
+  0%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes loading {
+  0%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes disappear {
+  0%{
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+	height: 0px;
+	visibility: hidden;
+	}
+}
+@-webkit-keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+	height: 0px;
+	visibility: hidden;
+  }
+}
+.loader span {
+	width: auto;
+	height: 30px;
+	z-index: 999;
+	opacity: 1;
+	color: #9356DC;
+	font-size: 50px;
+	margin-bottom: 40px;
+	font-family: 'Shrikhand', cursive;
+	display: flex;
+	animation-name: flash;
+	animation-duration: 3s;
+	animation-iteration-count:infinite;
+	animation-play-state:running;
 }
 .lettre:nth-child(1)
 {
@@ -157,13 +147,11 @@ body
 	text-align: center;
 	padding-top: 20px;
 }
-
 .bloclogoindex img
 {
 	max-width: 50%;
 	height: auto;
 }
-
 /* conteneur recherche lieu location*/
 /* => Revoir les dimensions du texte et le centrage quand on tape*/
 .contenantrecherche
@@ -176,20 +164,17 @@ body
 	/* ombre portee */
 	box-shadow: inset 0px 10px 10px -10px #bdbdbd;
 }
-
 .blocrecherche
 {
 	margin-left: 90px;
 	display: flex;
 	flex-direction: row;
 }
-
 div .rech1
 {
 	width: 30px;
 	margin-left: 20px;
 }
-
 .rech1 i
 {
 	width: 20px;
@@ -203,14 +188,12 @@ div .rech1
 	font-size: 18px;
 	width: 50px;
 }
-
 div.rech2
 {
 	margin-top: 15px;
 	width: 50px;
 
 }
-
 .rech2 input
 {
 	border-style: none;
@@ -220,7 +203,6 @@ div.rech2
 	outline: none;
 	width: 180px;
 }
-
 /* conteneur nav explorer */
 .blocnav
 {
@@ -474,21 +456,25 @@ div .btnexplorer
 	z-index: 1;
 	color: #000000;
 	text-decoration: none;
+	visibility: visible;
 }
 
-.coeur1:hover
+.coeur1:hover a
 {
 	opacity: 0;
+	visibility: hidden;
 }
 
 /* Vous employez des fonctions qui sont propres a certains #Navigateurs, comme #FireFox ou autres. Ce sont les arrondis, les degrades et d'autres aspects. => erreurs W3C */
 .coeur2
 {
+	opacity: 1;
 	font-size: 25px;
 	position: absolute;
 	margin-left: 285px;
 	margin-top: -80px;
-	background: -webkit-gradient(linear, left top, left bottom, from( #9356dc), to(#FF79DA));
+	background: 
+	-webkit-gradient(linear, left top, left bottom, from( #9356dc), to(#FF79DA));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	z-index: 0;
