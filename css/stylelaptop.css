@@ -25,14 +25,12 @@ body
 	height: 120px;
     padding-top: 35px;
 }
-
 .bloclogoindex img
 {
 	max-width:50%;
 	height: auto;
 	padding-top:35px;
 	margin-left: 130px;
-
 }
 /* conteneur recherche lieu location*/
 /* => Revoir les dimensions du texte et le centrage quand on tape*/
@@ -58,15 +56,12 @@ body
 	font-weight: 700;
 	margin-left: 80px;
 }
-
 .blocnav p
 {
-
 	margin-left: 80px;
 }
 div .btnexplorer
 {
-
 	margin-left: 80px;
 }
 .btnexplorer p
@@ -109,7 +104,6 @@ div .btnexplorer
 	margin-right: 110px;
 	padding-top: 30px;
 }
-
 .conteneurrestos h2
 {
 	margin-left: 60px;
@@ -131,24 +125,19 @@ div .btnexplorer
 	margin-top: -165px;
 }
 /* Position absolute Coeur hover + dégradé + main +  */
-.coeur1 a
+.coeur1 
 {
-
 	margin-left: 285px;
-
 }
 
 .coeur1:hover
 {
 	opacity: 0;
 }
-
 /* Vous employez des fonctions qui sont propres à certains #Navigateurs, comme #FireFox ou autres. Ce sont les arrondis, les dégradés et d'autres aspects. => erreurs W3C */
 .coeur2
 {
-
 	margin-left: 285px;
-
 }
 
 /* Footer */
@@ -173,7 +162,6 @@ footer
 	display: flex;
 	justify-content: space-between;
 }
-
 .listefooter ul li
 {
 	color: #fff;
