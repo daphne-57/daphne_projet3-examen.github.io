@@ -57,11 +57,7 @@ body
 		text-shadow: 0 0 7px #322442;
 	}
 }
-@-webkit-keyframes loading {
-  0%, 100% {
-    opacity: 1;
-  }
-}
+
 @keyframes loading {
   0%, 100% {
     opacity: 1;
@@ -80,19 +76,7 @@ body
 	visibility: hidden;
 	}
 }
-@-webkit-keyframes disappear {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-	height: 0px;
-	visibility: hidden;
-  }
-}
+
 .loader span {
 	width: auto;
 	height: 30px;
@@ -443,9 +427,8 @@ div .btnexplorer
 	color: #000000;
 	margin-top: -15px;
 }
-
 /* Position absolute Coeur hover + degrade + main +  */
-.coeur1 a
+.coeur1 
 {
 	font-size: 25px;
 	position: absolute;
@@ -458,13 +441,11 @@ div .btnexplorer
 	text-decoration: none;
 	visibility: visible;
 }
-
-.coeur1:hover a
+.coeur1:active
 {
 	opacity: 0;
 	visibility: hidden;
 }
-
 /* Vous employez des fonctions qui sont propres a certains #Navigateurs, comme #FireFox ou autres. Ce sont les arrondis, les degrades et d'autres aspects. => erreurs W3C */
 .coeur2
 {
@@ -473,13 +454,116 @@ div .btnexplorer
 	position: absolute;
 	margin-left: 285px;
 	margin-top: -80px;
+	z-index: 0;
+	text-decoration: none;
+	height: 25px;
+	
 	background: 
 	-webkit-gradient(linear, left top, left bottom, from( #9356dc), to(#FF79DA));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	z-index: 0;
-	text-decoration: none;
+
+	animation: animate-coeur 2s ease-in-out 2s infinite normal both;
+	/*animation: name duration timing-function delay iteration-count direction fill-mode;*/
 }
+		/*voir ce site https://codepen.io/iPawan/pen/PwomxJ  et https://www.web-eau.net/blog/15-animations-css-vraiment-bluffantes          https://fr.acervolima.com/comment-creer-une-animation-de-remplissage-de-texte-en-utilisant-css/       https://openclassrooms.com/forum/sujet/html-css-apparition-en-delais-et-transition*/
+
+@keyframes animate-coeur
+{
+	0%
+	{
+		opacity: 1;
+	}
+	50%
+	{
+		opacity: 0.5;
+	}
+	100%
+	{
+		opacity: 1;
+	}
+}
+@-webkit-keyframes animate-coeur
+{
+	0%
+	{
+		opacity: 1;
+	}
+	50%
+	{
+		opacity: 0.5;
+	}
+	100%
+	{
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes animate-coeur
+{
+	0%
+	{
+		opacity: 1;
+	}
+	50%
+	{
+		opacity: 0.5;
+	}
+	100%
+	{
+		opacity: 1;
+	}
+}
+/*
+@keyframes animate-coeur {
+    from {
+		height: 0%;
+
+	}
+
+	50%{
+		height: 50%;
+
+	}
+
+	to {
+		height: 100%;
+
+	}
+}
+@-webkit-keyframes animate-coeur {
+    from {
+		height: 0%;
+
+	}
+
+	50%{
+		height: 50%;
+
+	}
+
+	to {
+		height: 100%;
+
+	}
+}
+@-moz-keyframes animate-coeur {
+    from {
+		height: 0%;
+
+	}
+
+	50%{
+		height: 50%;
+
+	}
+
+	to {
+		height: 100%;
+
+	}
+}
+*/
 
 /* Footer */
 footer
@@ -498,7 +582,7 @@ footer
 	width: 40%;
 	padding-top: 40px;
 	padding-left: 20px;
-filter: invert(100%)}
+ 	filter: invert(100%)}
 
 .listefooter ul
 {

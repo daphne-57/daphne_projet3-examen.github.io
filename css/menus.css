@@ -45,7 +45,6 @@ main .conteneurmenus1, .conteneurmenus3, .conteneurmenus4
 {
 	height: 1300px;
 	background-color: #f6f6f6;
-	/* => opacité à 100% ça ne fonctionne pas ???*/
 	opacity: 0.99;
 	margin-top: -120px;
 	border-radius: 50px 50px 0px 0px;
@@ -55,7 +54,6 @@ main .conteneurmenus2
 {
 	height: 1400px;
 	background-color: #f6f6f6;
-	/* => opacité à 100% ça ne fonctionne pas ???*/
 	opacity: 0.99;
 	margin-top: -120px;
 	border-radius: 50px 50px 0px 0px;
