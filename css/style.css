@@ -445,25 +445,24 @@ div .btnexplorer
 {
 	opacity: 0;
 	visibility: hidden;
+	z-index: 0;
 }
 /* Vous employez des fonctions qui sont propres a certains #Navigateurs, comme #FireFox ou autres. Ce sont les arrondis, les degrades et d'autres aspects. => erreurs W3C */
 .coeur2
 {
-	opacity: 1;
 	font-size: 25px;
 	position: absolute;
 	margin-left: 285px;
 	margin-top: -80px;
-	z-index: 0;
 	text-decoration: none;
 	height: 25px;
-	
+
 	background: 
 	-webkit-gradient(linear, left top, left bottom, from( #9356dc), to(#FF79DA));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 
-	animation: animate-coeur 2s ease-in-out 2s infinite normal both;
+	animation: animate-coeur 2s ease-in-out 3s infinite normal both;
 	/*animation: name duration timing-function delay iteration-count direction fill-mode;*/
 }
 		/*voir ce site https://codepen.io/iPawan/pen/PwomxJ  et https://www.web-eau.net/blog/15-animations-css-vraiment-bluffantes          https://fr.acervolima.com/comment-creer-une-animation-de-remplissage-de-texte-en-utilisant-css/       https://openclassrooms.com/forum/sujet/html-css-apparition-en-delais-et-transition*/
@@ -472,99 +471,56 @@ div .btnexplorer
 {
 	0%
 	{
-		opacity: 1;
+		opacity: 0;
+	
 	}
 	50%
 	{
 		opacity: 0.5;
+
 	}
 	100%
 	{
 		opacity: 1;
+	
 	}
 }
 @-webkit-keyframes animate-coeur
 {
 	0%
 	{
-		opacity: 1;
+		opacity: 0;
+	
 	}
 	50%
 	{
 		opacity: 0.5;
+
 	}
 	100%
 	{
 		opacity: 1;
+	
 	}
 }
-
 @-moz-keyframes animate-coeur
 {
 	0%
 	{
-		opacity: 1;
+		opacity: 0;
+	
 	}
 	50%
 	{
 		opacity: 0.5;
+
 	}
 	100%
 	{
 		opacity: 1;
+	
 	}
 }
-/*
-@keyframes animate-coeur {
-    from {
-		height: 0%;
-
-	}
-
-	50%{
-		height: 50%;
-
-	}
-
-	to {
-		height: 100%;
-
-	}
-}
-@-webkit-keyframes animate-coeur {
-    from {
-		height: 0%;
-
-	}
-
-	50%{
-		height: 50%;
-
-	}
-
-	to {
-		height: 100%;
-
-	}
-}
-@-moz-keyframes animate-coeur {
-    from {
-		height: 0%;
-
-	}
-
-	50%{
-		height: 50%;
-
-	}
-
-	to {
-		height: 100%;
-
-	}
-}
-*/
-
 /* Footer */
 footer
 {
