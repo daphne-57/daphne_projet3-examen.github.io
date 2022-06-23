@@ -33,6 +33,25 @@ body
 	margin-left: 70px;
 }
 /* Main */
+.conteneurblocemnu{
+
+}
+.conteneurblocemnu:nth-child(1)
+{
+	animation-delay: .1s;
+}
+.conteneurblocemnu:nth-child(2)
+{
+	animation-delay: .1s;
+}
+.conteneurblocemnu:nth-child(3)
+{
+	animation-delay: .1s;
+}
+.conteneurblocemnu:nth-child(4)
+{
+	animation-delay: .1s;
+}
 .imgmenu img
 {
 	width: 375px;
@@ -195,13 +214,46 @@ main .conteneurmenus2
 	text-align: center;
 	border-radius: 0px 15px 15px 0px;
 }
-
 /* Apparition progressive des blocmenu ensemble, mais à faire 1 par 1 */
-.blocmenu
+.conteneurblocemnu
 {
-	transition-duration: 3s;
-	transition-delay: 1s;
+	animation: animate-blocmenu 3s ease-in-out 1s 1 normal both;
+	/*animation: name duration timing-function delay iteration-count direction fill-mode;*/
 }
+
+@keyframes animate-blocmenu {
+	from {
+	  margin-bottom: -8%;
+	  opacity: 0.5;
+	}
+  
+	to {
+	  margin-top: 0%;
+	  opacity: 1;
+	}
+  }
+  @-webkit-keyframes animate-blocmenu {
+	from {
+	  margin-bottom: -8%;
+	  opacity: 0.5;
+	}
+  
+	to {
+	  margin-top: 0%;
+	  opacity: 1;
+	}
+  }
+  @-moz-keyframes animate-blocmenu {
+	from {
+		margin-bottom: -8%;
+		opacity: 0.5;
+	  }
+	
+	  to {
+		margin-top: 0%;
+		opacity: 1;
+	  }
+  }
 /* Bouton commander */
 div .btncommander
 {
