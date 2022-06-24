@@ -1,29 +1,36 @@
+
 /*Medium devices (mobile, 375px and up)*/
 /*la taille des contenus tient compte du border et du padding*/
 *
 {
 	box-sizing: border-box;
 }
+
 body
 {
 	width: 375px;
 }
 
-
 /* header */
-.bloclogomenu{
+.bloclogomenu
+{
 	width: 300px;
 	height: 70px;
 }
-.logomenu{
+
+.logomenu
+{
 	height: 70px;
 	width: 300px;
-    padding-top: 23px;
+	padding-top: 23px;
 }
-.logomenu img{
+
+.logomenu img
+{
 	width: 55%;
 	margin-left: 100px;
 }
+
 .logomenu i
 {
 	position: absolute;
@@ -32,26 +39,64 @@ body
 	color: #000;
 	margin-left: 70px;
 }
+
 /* Main */
-.conteneurblocemnu{
+/* Animation conteneur bloc menu qui glisse */
+.conteneurblocemnu
+{
+	animation: animate-blocmenu 3s ease-in-out 1s 1 normal both;
+	/*animation: name duration timing-function delay iteration-count direction fill-mode;
+	*/
+}
+
+@keyframes animate-blocmenu
+{
+	from
+	{
+		margin-bottom: -8%;
+		opacity: 0.5;
+	}
+
+	to
+	{
+		margin-top: 0%;
+		opacity: 1;
+	}
 
 }
-.conteneurblocemnu:nth-child(1)
+
+@-webkit-keyframes animate-blocmenu
 {
-	animation-delay: .1s;
+	from
+	{
+		margin-bottom: -8%;
+		opacity: 0.5;
+	}
+
+	to
+	{
+		margin-top: 0%;
+		opacity: 1;
+	}
+
 }
-.conteneurblocemnu:nth-child(2)
+
+@-moz-keyframes animate-blocmenu
 {
-	animation-delay: .1s;
+	from
+	{
+		margin-bottom: -8%;
+		opacity: 0.5;
+	}
+
+	to
+	{
+		margin-top: 0%;
+		opacity: 1;
+	}
+
 }
-.conteneurblocemnu:nth-child(3)
-{
-	animation-delay: .1s;
-}
-.conteneurblocemnu:nth-child(4)
-{
-	animation-delay: .1s;
-}
+
 .imgmenu img
 {
 	width: 375px;
@@ -60,6 +105,7 @@ body
 	opacity: 1;
 	z-index: 0;
 }
+
 main .conteneurmenus1, .conteneurmenus3, .conteneurmenus4
 {
 	height: 1300px;
@@ -69,6 +115,7 @@ main .conteneurmenus1, .conteneurmenus3, .conteneurmenus4
 	border-radius: 50px 50px 0px 0px;
 	z-index: 10;
 }
+
 main .conteneurmenus2
 {
 	height: 1400px;
@@ -78,6 +125,7 @@ main .conteneurmenus2
 	border-radius: 50px 50px 0px 0px;
 	z-index: 10;
 }
+
 .titremenu h1
 {
 	font-size: 27px;
@@ -85,6 +133,7 @@ main .conteneurmenus2
 	margin-left: 20px;
 	padding-top: 25px;
 }
+
 .coeur3
 {
 	font-size: 25px;
@@ -94,6 +143,7 @@ main .conteneurmenus2
 	margin-left: 320px;
 	margin-top: -55px;
 }
+
 .titreplats
 {
 	margin-left: 20px;
@@ -101,6 +151,7 @@ main .conteneurmenus2
 	width: 40px;
 	margin-top: 0px;
 }
+
 .titreplats h2
 {
 	font-size: 16px;
@@ -111,6 +162,7 @@ main .conteneurmenus2
 	padding-top: 20px;
 	padding-left: 0px;
 }
+
 .blocmenu
 {
 	height: 75px;
@@ -126,6 +178,7 @@ main .conteneurmenus2
 	z-index: 0;
 	opacity: 1;
 }
+
 .blocmenu .legende h3
 {
 	padding-top: 5px;
@@ -139,12 +192,23 @@ main .conteneurmenus2
 	margin-left: 10px;
 	width: 280px;
 }
-.blocmenu:hover .legende h3{
+
+.blocmenu:hover .legende h3
+{
 	width: 230px;
 }
-.blocmenu:hover .legende h4{
+
+.blocmenu:hover .legende h4
+{
 	width: 230px;
 }
+
+.blocmenu .blocvert
+{
+	width: 0;
+	height: 0;
+}
+
 .blocmenu .legende h4
 {
 	padding-top: 5px;
@@ -158,11 +222,13 @@ main .conteneurmenus2
 	padding-left: 0px;
 	width: 280px;
 }
+
 .legende:hover
 {
 	width: 300px;
 	height: 80px;
 }
+
 .prix
 {
 	z-index: 2;
@@ -175,15 +241,17 @@ main .conteneurmenus2
 	margin-left: 300px;
 	padding-left: 0px;
 }
+
 .blocmenu:hover .prix
 {
 	margin-right: -50px;
 	position: relative;
 	margin-left: 250px;
 }
+
 .blocvert
 {
-	z-index: 0;
+	z-index: 1;
 	background: #fff;
 	width: 60px;
 	height: 75px;
@@ -192,68 +260,63 @@ main .conteneurmenus2
 	position: absolute;
 	margin-left: 295px;
 }
-.blocvert i
-{	width: 25px;
+
+/* Animation bloc vert et check*/
+.blocvert .fa-circle-check
+{
+	width: 25px;
 	height: 25px;
 	color: #fff;
-	font-size: 25px;
 	margin-top: 25px;
+	font-size: 0px;
+	-webkit-transition: all .5s ease-in;
+	transition: all .5s ease-in;
+	/*animation: name duration timing-function delay iteration-count direction fill-mode;
+	*/
 }
 
-.blocvert:hover .fa-circle-check{
+.blocvert:hover .fa-circle-check
+{
+	font-size: 25px;
 	transform: rotate(1turn);
 	transition:transform .7s ease-in-out;
-	transform-box:initial;
 }
+
 .blocmenu:hover .blocvert
 {
-	z-index: 99;
+	z-index: 1;
 	background: #99e2d0;
 	width: 60px;
 	height: 75px;
 	text-align: center;
 	border-radius: 0px 15px 15px 0px;
-}
-/* Apparition progressive des blocmenu ensemble, mais à faire 1 par 1 */
-.conteneurblocemnu
-{
-	animation: animate-blocmenu 3s ease-in-out 1s 1 normal both;
-	/*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+	position: relative;
+	margin-top: -80px;
+	margin-left: 354px;
+	animation-duration: 1s;
+	animation-name: glissement-blocvert;
+	animation-iteration-count: 1;
+	animation-direction: reverse;
+	animation-fill-mode:forwards;
+	/*animation: name duration timing-function delay iteration-count direction fill-mode;
+	*/
 }
 
-@keyframes animate-blocmenu {
-	from {
-	  margin-bottom: -8%;
-	  opacity: 0.5;
+@keyframes glissement-blocvert
+{
+	from
+	{
+		width: 70px;
+		transform: translate(-65px);
+		margin-right: -70px;
 	}
-  
-	to {
-	  margin-top: 0%;
-	  opacity: 1;
+
+	to
+	{
+		width: 0px;
 	}
-  }
-  @-webkit-keyframes animate-blocmenu {
-	from {
-	  margin-bottom: -8%;
-	  opacity: 0.5;
-	}
-  
-	to {
-	  margin-top: 0%;
-	  opacity: 1;
-	}
-  }
-  @-moz-keyframes animate-blocmenu {
-	from {
-		margin-bottom: -8%;
-		opacity: 0.5;
-	  }
-	
-	  to {
-		margin-top: 0%;
-		opacity: 1;
-	  }
-  }
+}
+
 /* Bouton commander */
 div .btncommander
 {
@@ -268,6 +331,7 @@ div .btncommander
 	/* ombre portée */
 	box-shadow: 0px 3px 10px 0px #898989;
 }
+
 div .btncommander:hover
 {
 	height: 50px;
@@ -280,6 +344,7 @@ div .btncommander:hover
 	/* ombre portée */
 	box-shadow: 0px 3px 10px 0px #696969;
 }
+
 .btncommander p
 {
 	width: 200px;

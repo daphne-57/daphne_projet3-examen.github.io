@@ -3,6 +3,7 @@
 @media screen and (min-width: 768px)
 {
 }
+
 /*la taille des contenus tient compte du border et du padding*/
 *
 {
@@ -13,8 +14,10 @@ body
 {
 	width: 768px;
 }
+
 /* loader */
-.loader{
+.loader
+{
 	width: 768px;
 }
 
@@ -26,13 +29,14 @@ body
 	text-align: left;
 	margin-left:110px;
 }
+
 .bloclogoindex img
 {
 	max-width: 30%;
 	height: auto;
 	padding-top: 30px;
-
 }
+
 /* conteneur recherche lieu location*/
 /* => Revoir les dimensions du texte et le centrage quand on tape*/
 .contenantrecherche
@@ -123,6 +127,7 @@ div .btnexplorer
 	text-align: left;
 	margin-left: 40px;
 }
+
 .btnexplorer :hover
 {
 	height: 50px;
@@ -144,8 +149,8 @@ div .btnexplorer
 	padding-top: 15px;
 	z-index: 10;
 	font-size: 16px;
-
 }
+
 .btnexplorer a
 {
 	text-decoration: none;
@@ -279,7 +284,7 @@ div .btnexplorer
 }
 
 /* Position absolute Coeur hover + dégradé + main +  */
-.coeur1 
+.coeur1
 {
 	margin-left: 380px;
 }
@@ -306,8 +311,8 @@ footer
 	width: 25%;
 	padding-top: 40px;
 	padding-left: 40px;
-	filter: invert(100%)
-}
+	filter: invert(100%)}
+
 .listefooter ul
 {
 	width: 728px;
