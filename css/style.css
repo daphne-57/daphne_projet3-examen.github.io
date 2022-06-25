@@ -470,7 +470,7 @@ div .btnexplorer
 	text-decoration: none;
 	height: 25px;
 
-	background:-webkit-gradient(linear, left top, left bottom, from( #9356dc), to(#FF79DA));
+	background: -webkit-gradient(linear, left top, left bottom, from( #9356dc), to(#FF79DA));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 
