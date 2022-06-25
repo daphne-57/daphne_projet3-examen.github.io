@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Médiaquéries avec les breakpoints, pour site responsive ou adaptatif-->
+
   <!--Mobiles devices 375px and up-->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/menus.css">
@@ -27,7 +29,7 @@
 <body>
   <!--Header-->
   <header>
-    <!--loader-->
+    <!--Loader Logo Ohmyfood en animation-->
     <div class="loader">
       <span class="lettre">o</span>
       <span class="lettre">h</span>
@@ -39,11 +41,11 @@
       <span class="lettre">d</span>
   
     </div>
-    <!--Logo Ohmyfood en animation-->
+    <!--Logo-->
     <div class="bloclogoindex">
       <img src="images/logo/ohmyfood.png" alt="Logo ohmyfood noir" />
     </div>
-    <!--Bloc Recherche lieu + ombré-->
+    <!-- Input Localisation -->
     <div class="contenantrecherche">
       <div class="blocrecherche">
         <div class="rech1">
@@ -56,25 +58,26 @@
         </div>
       </div>
     </div>
-    <!--Bloc nav explorer-->
+    <!--Bouton Nav explorer nos restaurants-->
     <div class="blocnav">
       <h1>Réservez le menu qui vous convient</h1>
       <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-      <!--Bouton Nav + dégradé +  ombré-->
       <div class="btnexplorer">
         <a href="#restaurants">
           <p>Explorer nos restaurants</p>
         </a>
       </div>
     </div>
-    <!--3 Filtres-->
+    <!--3 Boutons Filtres-->
     <div class="conteneurfiltres">
       <h2>Fonctionnement</h2>
       <div class="conteneurblocfiltre">
         <div class="blocfiltre">
+    <!--Petit rond violet avec numéro-->
           <div class="rondoblongue">
             <p>1</p>
           </div>
+    <!--Forme oblongue gris clair -->
           <div class="oblongue">
             <i class="fa-solid fa-mobile-screen-button"></i>
             <p>
@@ -108,20 +111,26 @@
     </div>
   </header>
   <!--Main-->
+
+  <!--Liste des restaurants-->
   <main class="conteneurrestos">
     <h2 id="restaurants">Restaurants</h2>
     <div class="conteneurblocresto">
+  <!--Bloc restaurant-->      
       <div class="blocresto">
         <a href="menu1.html">
+  <!--Image du restaurants-->        
           <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût" />
           <div class="blocnew">
+  <!--Etiquette nouveau-->   
             <p>Nouveau</p>
           </div>
+  <!--Nom et quartier du resto-->   
           <div class="legende">
             <h3>La palette du goût</h3>
             <h4>Ménilmontant</h4>
           </div>
-          <!-- Coeur hover + dégradé + main-->
+  <!-- Coeur effet active + animation + dégradé-->
           <div class="coeur1">
             <i class="fa-regular fa-heart"></i>
           </div>
@@ -140,7 +149,6 @@
             <h3>La note enchantée</h3>
             <h4>Charonne</h4>
           </div>
-          <!-- Coeur hover + dégradé + main-->
           <div class="coeur1">
             <i class="fa-regular fa-heart"></i>
           </div>
@@ -156,7 +164,6 @@
             <h3>À la française</h3>
             <h4>Cité Rouge</h4>
           </div>
-          <!-- Coeur hover + dégradé + main-->
           <div class="coeur1">
             <i class="fa-regular fa-heart"></i>
           </div>
@@ -172,7 +179,6 @@
             <h3>Le délice des sens</h3>
             <h4>Folie-Méricourt</h4>
           </div>
-          <!-- Coeur hover + dégradé + main-->
           <div class="coeur1">
             <i class="fa-regular fa-heart"></i>
           </div>
@@ -183,12 +189,14 @@
       </div>
     </div>
   </main>
-  <!--footer-->
+
+  <!--Footer-->
   <footer>
+  <!--Logo-->
     <div class="logofooter">
-      <!--logo pixelisé voir si la typo c'est mieux-->
       <img src="images/logo/ohmyfood.png" alt="Logo ohmyfood blanc" />
     </div>
+  <!--Liste mentions légales -->
     <div class="listefooter">
       <ul>
         <li>
@@ -209,6 +217,7 @@
           </a>
         </li>
         <li>
+  <!--Mailto-->
           <a href="mailto:email@ohmyfood.com">
             <p>Contact</p>
           </a>

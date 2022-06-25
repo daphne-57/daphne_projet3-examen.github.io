@@ -12,25 +12,25 @@ body
 }
 
 /* header */
+
 .bloclogomenu
 {
 	width: 300px;
 	height: 70px;
 }
-
+/* Logo */
 .logomenu
 {
 	height: 70px;
 	width: 300px;
 	padding-top: 23px;
 }
-
 .logomenu img
 {
 	width: 55%;
 	margin-left: 100px;
 }
-
+/* flèche lien vers l'accueil */
 .logomenu i
 {
 	position: absolute;
@@ -41,14 +41,77 @@ body
 }
 
 /* Main */
-/* Animation conteneur bloc menu qui glisse */
+
+/* Image du restaurant */
+.imgmenu img
+{
+	width: 375px;
+	height: 250px;
+	object-fit: cover;
+	opacity: 1;
+	z-index: 0;
+}
+main .conteneurmenus1, .conteneurmenus3, .conteneurmenus4
+{
+	height: 1300px;
+	background-color: #f6f6f6;
+	opacity: 0.99;
+	margin-top: -120px;
+	border-radius: 50px 50px 0px 0px;
+	z-index: 10;
+}
+main .conteneurmenus2
+{
+	height: 1400px;
+	background-color: #f6f6f6;
+	opacity: 0.99;
+	margin-top: -120px;
+	border-radius: 50px 50px 0px 0px;
+	z-index: 10;
+}
+/* Titre du restaurant */    
+.titremenu h1
+{
+	font-size: 27px;
+	font-family: 'Shrikhand', cursive;
+	margin-left: 20px;
+	padding-top: 25px;
+}
+/* Coeur noir non activable */
+.coeur3
+{
+	font-size: 25px;
+	position: absolute;
+	color: #000;
+	z-index: 2;
+	margin-left: 320px;
+	margin-top: -55px;
+}
+/* Entréé, plats, dessert, sous-titre */      
+.titreplats
+{
+	margin-left: 20px;
+	border-bottom: 2px solid #99e2d0;
+	width: 40px;
+	margin-top: 0px;
+}
+.titreplats h2
+{
+	font-size: 16px;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	color: #000;
+	font-weight: 400;
+	padding-top: 20px;
+	padding-left: 0px;
+}
+/* Animation conteneur blocs menus qui glisse */
 .conteneurblocemnu
 {
 	animation: animate-blocmenu 3s ease-in-out 1s 1 normal both;
 	/*animation: name duration timing-function delay iteration-count direction fill-mode;
 	*/
 }
-
 @keyframes animate-blocmenu
 {
 	from
@@ -64,7 +127,6 @@ body
 	}
 
 }
-
 @-webkit-keyframes animate-blocmenu
 {
 	from
@@ -78,9 +140,7 @@ body
 		margin-top: 0%;
 		opacity: 1;
 	}
-
 }
-
 @-moz-keyframes animate-blocmenu
 {
 	from
@@ -88,81 +148,13 @@ body
 		margin-bottom: -8%;
 		opacity: 0.5;
 	}
-
 	to
 	{
 		margin-top: 0%;
 		opacity: 1;
 	}
-
 }
-
-.imgmenu img
-{
-	width: 375px;
-	height: 250px;
-	object-fit: cover;
-	opacity: 1;
-	z-index: 0;
-}
-
-main .conteneurmenus1, .conteneurmenus3, .conteneurmenus4
-{
-	height: 1300px;
-	background-color: #f6f6f6;
-	opacity: 0.99;
-	margin-top: -120px;
-	border-radius: 50px 50px 0px 0px;
-	z-index: 10;
-}
-
-main .conteneurmenus2
-{
-	height: 1400px;
-	background-color: #f6f6f6;
-	opacity: 0.99;
-	margin-top: -120px;
-	border-radius: 50px 50px 0px 0px;
-	z-index: 10;
-}
-
-.titremenu h1
-{
-	font-size: 27px;
-	font-family: 'Shrikhand', cursive;
-	margin-left: 20px;
-	padding-top: 25px;
-}
-
-.coeur3
-{
-	font-size: 25px;
-	position: absolute;
-	color: #000;
-	z-index: 2;
-	margin-left: 320px;
-	margin-top: -55px;
-}
-
-.titreplats
-{
-	margin-left: 20px;
-	border-bottom: 2px solid #99e2d0;
-	width: 40px;
-	margin-top: 0px;
-}
-
-.titreplats h2
-{
-	font-size: 16px;
-	text-transform: uppercase;
-	font-family: 'Roboto', sans-serif;
-	color: #000;
-	font-weight: 400;
-	padding-top: 20px;
-	padding-left: 0px;
-}
-
+/* Plat à selectionner */  
 .blocmenu
 {
 	height: 75px;
@@ -178,7 +170,7 @@ main .conteneurmenus2
 	z-index: 0;
 	opacity: 1;
 }
-
+/* bloc texte ...*/
 .blocmenu .legende h3
 {
 	padding-top: 5px;
@@ -192,23 +184,7 @@ main .conteneurmenus2
 	margin-left: 10px;
 	width: 280px;
 }
-
-.blocmenu:hover .legende h3
-{
-	width: 230px;
-}
-
-.blocmenu:hover .legende h4
-{
-	width: 230px;
-}
-
-.blocmenu .blocvert
-{
-	width: 0;
-	height: 0;
-}
-
+/* bloc texte ...*/
 .blocmenu .legende h4
 {
 	padding-top: 5px;
@@ -222,13 +198,19 @@ main .conteneurmenus2
 	padding-left: 0px;
 	width: 280px;
 }
-
 .legende:hover
 {
 	width: 300px;
 	height: 80px;
 }
-
+.blocmenu:hover .legende h3
+{
+	width: 230px;
+}
+.blocmenu:hover .legende h4
+{
+	width: 230px;
+}
 .prix
 {
 	z-index: 2;
@@ -241,14 +223,19 @@ main .conteneurmenus2
 	margin-left: 300px;
 	padding-left: 0px;
 }
-
+/* bloc prix <- */
 .blocmenu:hover .prix
 {
 	margin-right: -50px;
 	position: relative;
 	margin-left: 250px;
 }
-
+/* Animation bloc vert et check*/
+.blocmenu .blocvert
+{
+	width: 0;
+	height: 0;
+}
 .blocvert
 {
 	z-index: 1;
@@ -260,8 +247,6 @@ main .conteneurmenus2
 	position: absolute;
 	margin-left: 295px;
 }
-
-/* Animation bloc vert et check*/
 .blocvert .fa-circle-check
 {
 	width: 25px;
@@ -274,14 +259,12 @@ main .conteneurmenus2
 	/*animation: name duration timing-function delay iteration-count direction fill-mode;
 	*/
 }
-
 .blocvert:hover .fa-circle-check
 {
 	font-size: 25px;
 	transform: rotate(1turn);
 	transition:transform .7s ease-in-out;
 }
-
 .blocmenu:hover .blocvert
 {
 	z-index: 1;
@@ -301,7 +284,6 @@ main .conteneurmenus2
 	/*animation: name duration timing-function delay iteration-count direction fill-mode;
 	*/
 }
-
 @keyframes glissement-blocvert
 {
 	from
@@ -310,14 +292,13 @@ main .conteneurmenus2
 		transform: translate(-65px);
 		margin-right: -70px;
 	}
-
 	to
 	{
 		width: 0px;
 	}
 }
+/* Bouton commander + tunnel de vente */
 
-/* Bouton commander */
 div .btncommander
 {
 	height: 50px;
@@ -362,3 +343,5 @@ div .btncommander:hover
 {
 	text-decoration: none;
 }
+/* Footer = Idem accueil*/
+/* Logo + Liste mentions légales + Mailto*/

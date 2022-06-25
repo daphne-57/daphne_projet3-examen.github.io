@@ -17,8 +17,9 @@ body
 	z-index: 1;
 	border: #ccc solid 1px;
 }
+/* header */
 
-/* loader */
+/* Loader Logo Ohmyfood en animation */
 .loader
 {
 	visibility: visible;
@@ -39,7 +40,6 @@ body
 	background-color: rgb(255,255,255,1);
 	animation: disappear 3s 450ms forwards;
 }
-
 @keyframes flash
 {
 	0%
@@ -60,7 +60,6 @@ body
 		text-shadow: 0 0 7px #322442;
 	}
 }
-
 @keyframes loading
 {
 	0%, 100%
@@ -68,19 +67,16 @@ body
 		opacity: 1;
 	}
 }
-
 @keyframes disappear
 {
 	0%
 	{
 		opacity: 1;
 	}
-
 	50%
 	{
 		opacity: 1;
 	}
-
 	100%
 	{
 		opacity: 0;
@@ -88,7 +84,7 @@ body
 		visibility: hidden;
 	}
 }
-
+/* Loader Lettres à lettres */
 .loader span
 {
 	width: auto;
@@ -105,7 +101,6 @@ body
 	animation-iteration-count:infinite;
 	animation-play-state:running;
 }
-
 .lettre:nth-child(1)
 {
 	animation-delay: .1s;
@@ -145,8 +140,7 @@ body
 {
 	animation-delay: 0.8s;
 }
-
-/* header */
+/* Logo */
 .bloclogoindex
 {
 	height: 70px;
@@ -159,9 +153,7 @@ body
 	max-width: 50%;
 	height: auto;
 }
-
-/* conteneur recherche lieu location*/
-/* => Revoir les dimensions du texte et le centrage quand on tape*/
+/* Input Localisation */
 .contenantrecherche
 {
 	width: auto;
@@ -216,7 +208,7 @@ div.rech2
 	width: 180px;
 }
 
-/* conteneur nav explorer */
+/* Bouton Nav explorer nos restaurants */
 .blocnav
 {
 	height: 290px;
@@ -266,12 +258,11 @@ div .btnexplorer
 	background: #9356dc;
 	z-index: 0;
 	margin: auto;
-	/* degrade dans un bloc */
+	/* degrade dans un bloc + clair */
 	background: linear-gradient(#fd97e0, #aa7be2);
-	/* ombre portee */
+	/* ombre portee + foncée */
 	box-shadow: 0px 3px 10px 0px #696969;
 }
-
 .btnexplorer p
 {
 	width: 200px;
@@ -281,18 +272,15 @@ div .btnexplorer
 	z-index: 10;
 	font-size: 16px;
 }
-
 .btnexplorer a
 {
 	text-decoration: none;
 }
-
-/* conteneur filtres */
+/* 3 Boutons Filtres */
 .conteneurfiltres
 {
 	height: 440px;
 }
-
 .conteneurfiltres h2
 {
 	font-size: 24px;
@@ -301,7 +289,6 @@ div .btnexplorer
 	margin-left: 20px;
 	padding-bottom: 10px;
 }
-
 .blocfiltre
 {
 	height: 75px;
@@ -309,20 +296,19 @@ div .btnexplorer
 	flex-direction: row;
 	margin-bottom: 25px;
 }
-
+/* Effet fond violet clair */
 .blocfiltre :hover
 {
 	background: #f5edff;
 	border-radius: 25px;
 	color: #000000;
 }
-
+/* Effet picto violet  */
 .blocfiltre :hover i
 {
 	color: #9356dc;
 }
-
-/* Attention fond bleu au clic a enlever*/
+/* Petit rond violet avec numéro */
 .rondoblongue
 {
 	height: 25px;
@@ -334,7 +320,6 @@ div .btnexplorer
 	z-index: 1;
 	margin-top: 25px;
 }
-
 .rondoblongue p
 {
 	z-index: 10;
@@ -343,7 +328,7 @@ div .btnexplorer
 	margin: auto;
 	font-size: 14px;
 }
-
+/* Forme oblongue gris clair */
 .oblongue
 {
 	height: 75px;
@@ -380,21 +365,21 @@ div .btnexplorer
 	padding-top: 15px;
 	text-decoration: none;
 }
-
 /* Main */
+
+/* Liste des restaurants */
 .conteneurrestos
 {
 	background: #f6f6f5;
 	height: 1250px;
 }
-
 .conteneurrestos h2
 {
 	padding-left: 20px;
 	padding-top: 60px;
 	font-size: 24px;
 }
-
+/* Bloc restaurant */    
 .blocresto
 {
 	height: 255px;
@@ -405,12 +390,11 @@ div .btnexplorer
 	margin-bottom: 20px;
 	box-shadow: 0px 3px 10px 0px #d3d1d1;
 }
-
 .blocresto a
 {
 	text-decoration: none;
 }
-
+/* Image du restaurant */   
 .blocresto img
 {
 	width: 335px;
@@ -418,7 +402,7 @@ div .btnexplorer
 	object-fit: cover;
 	border-radius: 25px 25px 0px 0px;
 }
-
+/* Etiquette nouveau */
 .blocnew
 {
 	width: 80px;
@@ -435,13 +419,12 @@ div .btnexplorer
 	text-align: center;
 	margin-top: 5px;
 }
-
+/* Nom et quartier du resto */ 
 .legende
 {
 	width: 335px;
 	height: 80px;
 }
-
 .legende h3
 {
 	font-size: 20px;
@@ -450,7 +433,6 @@ div .btnexplorer
 	color: #000000;
 	margin-top: 10px;
 }
-
 .legende h4
 {
 	font-size: 17px;
@@ -459,8 +441,7 @@ div .btnexplorer
 	color: #000000;
 	margin-top: -15px;
 }
-
-/* Position absolute Coeur hover + degrade + main +  */
+/* Coeur effet active + animation + dégradé */
 .coeur1
 {
 	font-size: 25px;
@@ -474,15 +455,12 @@ div .btnexplorer
 	text-decoration: none;
 	visibility: visible;
 }
-
 .coeur1:active
 {
 	opacity: 0;
 	visibility: hidden;
 	z-index: 0;
 }
-
-/* Vous employez des fonctions qui sont propres a certains #Navigateurs, comme #FireFox ou autres. Ce sont les arrondis, les degrades et d'autres aspects. => erreurs W3C */
 .coeur2
 {
 	font-size: 25px;
@@ -491,15 +469,15 @@ div .btnexplorer
 	margin-top: -80px;
 	text-decoration: none;
 	height: 25px;
+
 	background:-webkit-gradient(linear, left top, left bottom, from( #9356dc), to(#FF79DA));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+
 	animation: animate-coeur 2s ease-in-out 3s infinite normal both;
 	/*animation: name duration timing-function delay iteration-count direction fill-mode;
 	*/
 }
-
-/*voir ce site https://codepen.io/iPawan/pen/PwomxJ  et https://www.web-eau.net/blog/15-animations-css-vraiment-bluffanteshttps://fr.acervolima.com/comment-creer-une-animation-de-remplissage-de-texte-en-utilisant-css/https://openclassrooms.com/forum/sujet/html-css-apparition-en-delais-et-transition*/
 @keyframes animate-coeur
 {
 	0%
@@ -545,19 +523,18 @@ footer
 	height: 260px;
 	background: #353535;
 }
-
 .listefooter
 {
 	display: flex;
 }
-
+/* Logo */
 .logofooter img
 {
 	width: 40%;
 	padding-top: 40px;
 	padding-left: 20px;
-filter: invert(100%)}
-
+	filter: invert(100%)}
+/* Liste mentions légales + Mailto */
 .listefooter ul
 {
 	list-style-type: none;
