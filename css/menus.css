@@ -170,7 +170,7 @@ main .conteneurmenus2
 	z-index: 0;
 	opacity: 1;
 }
-/* bloc texte ...*/
+/* bloc texte */
 .blocmenu .legende h3
 {
 	padding-top: 5px;
@@ -198,11 +198,6 @@ main .conteneurmenus2
 	padding-left: 0px;
 	width: 280px;
 }
-.legende:hover
-{
-	width: 300px;
-	height: 80px;
-}
 .blocmenu:hover .legende h3
 {
 	width: 230px;
@@ -210,6 +205,11 @@ main .conteneurmenus2
 .blocmenu:hover .legende h4
 {
 	width: 230px;
+}
+.legende:hover
+{
+	width: 300px;
+	height: 80px;
 }
 .prix
 {
@@ -223,7 +223,7 @@ main .conteneurmenus2
 	margin-left: 300px;
 	padding-left: 0px;
 }
-/* bloc prix <-- */
+/* bloc prix <- */
 .blocmenu:hover .prix
 {
 	margin-right: -50px;
