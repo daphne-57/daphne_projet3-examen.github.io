@@ -184,13 +184,13 @@ main .conteneurmenus2
 	margin-left: 10px;
 	width: 280px;
 }
-/* bloc texte ...*/
 .blocmenu .legende h4
 {
 	padding-top: 5px;
 	font-size: 15px;
 	font-weight: 300;
 	margin-right: 0px;
+/* Bloc texte plus court = ...*/
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
@@ -223,14 +223,14 @@ main .conteneurmenus2
 	margin-left: 300px;
 	padding-left: 0px;
 }
-/* bloc prix <- */
+/* bloc prix <-- */
 .blocmenu:hover .prix
 {
 	margin-right: -50px;
 	position: relative;
 	margin-left: 250px;
 }
-/* Animation bloc vert et check*/
+
 .blocmenu .blocvert
 {
 	width: 0;
@@ -247,24 +247,8 @@ main .conteneurmenus2
 	position: absolute;
 	margin-left: 295px;
 }
-.blocvert .fa-circle-check
-{
-	width: 25px;
-	height: 25px;
-	color: #fff;
-	margin-top: 25px;
-	font-size: 0px;
-	-webkit-transition: all .5s ease-in;
-	transition: all .5s ease-in;
-	/*animation: name duration timing-function delay iteration-count direction fill-mode;
-	*/
-}
-.blocvert:hover .fa-circle-check
-{
-	font-size: 25px;
-	transform: rotate(1turn);
-	transition:transform .7s ease-in-out;
-}
+
+/* Animation bloc vert */
 .blocmenu:hover .blocvert
 {
 	z-index: 1;
@@ -281,8 +265,6 @@ main .conteneurmenus2
 	animation-iteration-count: 1;
 	animation-direction: reverse;
 	animation-fill-mode:forwards;
-	/*animation: name duration timing-function delay iteration-count direction fill-mode;
-	*/
 }
 @keyframes glissement-blocvert
 {
@@ -297,7 +279,26 @@ main .conteneurmenus2
 		width: 0px;
 	}
 }
-/* Bouton commander + tunnel de vente */
+
+/* Animation check */
+.blocvert:hover .fa-circle-check
+{
+	font-size: 25px;
+	transform: rotate(1turn);
+	transition:transform .7s ease-in-out;
+}
+.blocvert .fa-circle-check
+{
+	width: 25px;
+	height: 25px;
+	color: #fff;
+	margin-top: 25px;
+	font-size: 0px;
+	-webkit-transition: all .5s ease-in;
+	transition: all .5s ease-in;
+
+}
+/* Bouton commander dégradé */
 
 div .btncommander
 {
@@ -313,6 +314,7 @@ div .btncommander
 	box-shadow: 0px 3px 10px 0px #898989;
 }
 
+/* Bouton commander + clair */
 div .btncommander:hover
 {
 	height: 50px;
