@@ -119,13 +119,11 @@ main .conteneurmenus2
 		margin-bottom: -8%;
 		opacity: 0.5;
 	}
-
 	to
 	{
 		margin-top: 0%;
 		opacity: 1;
 	}
-
 }
 @-webkit-keyframes animate-blocmenu
 {
@@ -170,6 +168,11 @@ main .conteneurmenus2
 	z-index: 0;
 	opacity: 1;
 }
+/* Curseur en forme de doigt */
+.blocmenu:hover{
+	cursor: pointer;
+}
+
 /* bloc texte */
 .blocmenu .legende h3
 {
@@ -210,6 +213,7 @@ main .conteneurmenus2
 {
 	width: 300px;
 	height: 80px;
+	
 }
 .prix
 {
@@ -247,7 +251,6 @@ main .conteneurmenus2
 	position: absolute;
 	margin-left: 295px;
 }
-
 /* Animation bloc vert */
 .blocmenu:hover .blocvert
 {
@@ -265,6 +268,7 @@ main .conteneurmenus2
 	animation-iteration-count: 1;
 	animation-direction: reverse;
 	animation-fill-mode:forwards;
+
 }
 @keyframes glissement-blocvert
 {
@@ -279,15 +283,18 @@ main .conteneurmenus2
 		width: 0px;
 	}
 }
+/* Bloc vert qui s'ouvre au hover sur le bloc blanc mais le picto check est en dehors du bloc*/
 
 /* Animation check */
-.blocvert:hover .fa-circle-check
+.blocmenu:hover .fa-circle-check
 {
 	font-size: 25px;
 	transform: rotate(1turn);
 	transition:transform .7s ease-in-out;
+	transform:translate(1);
+	animation: deformation-check;
 }
-.blocvert .fa-circle-check
+.fa-circle-check
 {
 	width: 25px;
 	height: 25px;
@@ -296,8 +303,9 @@ main .conteneurmenus2
 	font-size: 0px;
 	-webkit-transition: all .5s ease-in;
 	transition: all .5s ease-in;
-
+	
 }
+
 /* Bouton commander dégradé */
 
 div .btncommander
