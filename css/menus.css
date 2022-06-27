@@ -289,11 +289,32 @@ main .conteneurmenus2
 .blocmenu:hover .fa-circle-check
 {
 	font-size: 25px;
-	transform: rotate(1turn);
+	/*transform: rotate(1turn);*/
 	transition:transform .7s ease-in-out;
 	transform:translate(1);
 	animation: deformation-check;
+	animation-duration: 1s;
 }
+/* Animation deformation-check opacité et rotation */
+@keyframes deformation-check {
+
+	0% {opacity:0;
+  
+		transform: rotate(0deg);
+  
+	}
+	50% {opacity:0;
+  
+		transform: rotate(180deg);
+
+}
+	100% {opacity:1;
+  
+		transform: rotate(360deg);
+  
+	}
+  
+  }
 .fa-circle-check
 {
 	width: 25px;
@@ -303,9 +324,7 @@ main .conteneurmenus2
 	font-size: 0px;
 	-webkit-transition: all .5s ease-in;
 	transition: all .5s ease-in;
-	
 }
-
 /* Bouton commander dégradé */
 
 div .btncommander
