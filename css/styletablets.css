@@ -13,34 +13,31 @@
 /* header */
 .bloclogoindex
 {
-	width: 700px;
-	height: 85px;
-	text-align: left;
-	margin-left:110px;
+    height: 70px;
+    text-align: center;
+    padding-top: 20px;
 }
 
 .bloclogoindex img
 {
-	max-width: 30%;
-	height: auto;
-	padding-top: 30px;
+	height: 83%;
 }
 
 /* conteneur recherche lieu location*/
 /* => Revoir les dimensions du texte et le centrage quand on tape*/
 .contenantrecherche
 {
-	margin: auto;
-	height: 45px;
-	background: #eaeaea;
-	/* ombre portée */
-	box-shadow: inset 0px 3px 10px 0px #898989;
-	border-radius: 25px;
-	width: 280px;
-	margin-bottom: 50px;
-	margin-left: 360px;
-	margin-top: -40px;
-}
+    /* margin: auto; */
+    /* height: 45px; */
+    background: #eaeaea;
+    /* box-shadow: inset 0px 3px 10px 0px #898989; */
+    /* border-radius: 25px; */
+    /* width: 280px; */
+    /* margin-bottom: 50px; */
+    /* margin-left: 360px; */
+    /* margin-top: -40px;*/
+		}
+
 
 .blocrecherche
 {
@@ -50,8 +47,7 @@
 
 .rech1
 {
-	width: 30px;
-	margin-left: 40px;
+
 }
 
 .rech1 i
