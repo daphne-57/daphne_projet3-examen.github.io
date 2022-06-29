@@ -1,8 +1,4 @@
 
-/*Medium devices (tablets, 1024px and up)*/
-@media screen and (min-width: 1024px)
-{
-}
 
 /*la taille des contenus tient compte du border et du padding*/
 *
@@ -10,10 +6,6 @@
 	box-sizing: border-box;
 }
 
-body
-{
-	width: 1024px;
-}
 
 /* header */
 .bloclogomenu

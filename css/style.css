@@ -1,5 +1,5 @@
 
-/*Medium devices (mobile, 375px and up)*/
+
 /*la taille des contenus tient compte du border et du padding*/
 *
 {
@@ -7,24 +7,24 @@
 }
 body
 {
-	width: 375px;
+
+	max-width: 1920px;
 	background-color: rgb(255,255,255,1);
 	margin: auto;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	z-index: 1;
-	border: #ccc solid 1px;
 }
 /* header */
 
 /* Loader Logo Ohmyfood en animation */
 .loader
 {
+	width: 100%;
 	visibility: visible;
 	z-index: 999;
 	opacity: 1;
-	width: 375px;
 	height: 2405px;
 	position: absolute;
 	justify-content: center;
@@ -149,16 +149,14 @@ body
 
 .bloclogoindex img
 {
-	max-width: 50%;
-	height: auto;
+	height: 83%;
 }
 /* Input Localisation */
 .contenantrecherche
 {
 	width: auto;
 	margin: auto;
-	display: flex;
-	flex-direction: row;
+
 	height: 50px;
 	background: #eaeaea;
 	/* ombre portee */
@@ -167,20 +165,20 @@ body
 
 .blocrecherche
 {
-	margin-left: 90px;
-	display: flex;
-	flex-direction: row;
+
+
 }
 
 div .rech1
 {
-	width: 30px;
-	margin-left: 20px;
+	max-width: 239px;
+	margin: auto;
+
 }
 
 .rech1 i
 {
-	width: 20px;
+	margin-right: 15px;
 	height: 50px;
 	padding-top: 17px;
 }
@@ -188,13 +186,13 @@ div .rech1
 .rech2 p
 {
 	font-size: 18px;
-	width: 50px;
+	width: 100%;
 }
 
 div.rech2
 {
 	margin-top: 15px;
-	width: 50px;
+	width: 13%;
 }
 
 .rech2 input
@@ -204,45 +202,46 @@ div.rech2
 	background: #eaeaea;
 	border: none;
 	outline: none;
-	width: 180px;
+	width: 100%;
 }
 
 /* Bouton Nav explorer nos restaurants */
+.bg-blocnav{
+    background: #f6f6f6;
+}
 .blocnav
 {
-	height: 290px;
-	background: #f6f6f6;
-	padding-top: 45px;
-}
+    padding-top: 45px;
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 45px;
+	}
 
 .blocnav h1
 {
-	width: 250px;
-	margin: auto;
-	text-align: center;
 	font-size: 24px;
 	font-weight: 700;
 }
 
 .blocnav p
 {
-	width: 320px;
-	margin: auto;
-	font-size: 18px;
-	font-weight: 300;
-	padding-top: 25px;
-	text-align: center;
-	padding-bottom: 30px;
+    font-size: 18px;
+    font-weight: 300;
+    /* padding-top: 25px; */
+    padding-bottom: 19px;
 }
 
 div .btnexplorer
 {
+	text-align: center;
 	height: 50px;
-	width: 220px;
 	border-radius: 25px;
 	background: #9356dc;
 	z-index: 0;
+	max-width: 334px;
 	margin: auto;
+
 	/* degrade dans un bloc */
 	background: linear-gradient(#FF79DA, #9356dc);
 	/* ombre portee */
@@ -252,7 +251,7 @@ div .btnexplorer
 .btnexplorer :hover
 {
 	height: 50px;
-	width: 220px;
+	width:58%;
 	border-radius: 25px;
 	background: #9356dc;
 	z-index: 0;
@@ -264,7 +263,7 @@ div .btnexplorer
 }
 .btnexplorer p
 {
-	width: 200px;
+
 	font-weight: 400;
 	color: #fff;
 	padding-top: 15px;
@@ -311,7 +310,7 @@ div .btnexplorer
 .rondoblongue
 {
 	height: 25px;
-	width: 25px;
+	width:6%;
 	border-radius: 50%;
 	color: #fff;
 	background-color: #9356dc;
@@ -331,7 +330,7 @@ div .btnexplorer
 .oblongue
 {
 	height: 75px;
-	width: 320px;
+	width: 85%;
 	background: #f6f6f6;
 	border-radius: 25px;
 	box-shadow: 0px 5px 20px -2px #C2C2C2;
@@ -360,7 +359,7 @@ div .btnexplorer
 	font-weight: 500;
 	font-size: 16px;
 	padding-left: 20px;
-	width: 200px;
+	width: 100%;
 	padding-top: 15px;
 	text-decoration: none;
 }
@@ -382,7 +381,7 @@ div .btnexplorer
 .blocresto
 {
 	height: 255px;
-	width: 335px;
+	width: 90%;
 	background: #fff;
 	border-radius: 25px;
 	margin: auto;
@@ -396,7 +395,7 @@ div .btnexplorer
 /* Image du restaurant */   
 .blocresto img
 {
-	width: 335px;
+	width: 100%;
 	height: 175px;
 	object-fit: cover;
 	border-radius: 25px 25px 0px 0px;
@@ -404,7 +403,7 @@ div .btnexplorer
 /* Etiquette nouveau */
 .blocnew
 {
-	width: 80px;
+	width: 21%;
 	height: 30px;
 	background-color: #99e2d0;
 	position: absolute;
@@ -421,7 +420,7 @@ div .btnexplorer
 /* Nom et quartier du resto */ 
 .legende
 {
-	width: 335px;
+	width: 90%;
 	height: 80px;
 }
 .legende h3
@@ -441,80 +440,56 @@ div .btnexplorer
 	margin-top: -15px;
 }
 /* Coeur effet active + animation + dégradé */
-.coeur1
+.coeur1 
 {
 	font-size: 25px;
 	position: absolute;
 	margin-left: 285px;
 	margin-top: -80px;
-	background-color: #fff;
-	opacity: 1;
-	z-index: 1;
+	background-color: rgb(255,255,255,1);
 	color: #000000;
-	text-decoration: none;
+	z-index:1; 
+	opacity: 1;
 	visibility: visible;
 }
-.coeur1:hover
+.coeur1:hover 
 {
-	/* :nover coeur 2 qui clignote*/
 	z-index:0; 
 	opacity: 0;
 	visibility: hidden;
+	display:none;
+	background-color: rgb(255,255,255,0);
+
 }
-.coeur2
+.coeur2 
 {	/* z-index: 1; => bloc qui s'affiche tout seule partout et qui ne part pas */
 	font-size: 25px;
 	position: absolute;
 	margin-left: 285px;
 	margin-top: -80px;
-	text-decoration: none;
-	height: 25px;
-
-	background: -webkit-gradient(linear, left top, left bottom, from( #9356dc), to(#FF79DA));
+	background-color: rgb(255,255,255,1);
+	background: 
+	-webkit-gradient(linear, left top, left bottom, from( #9356dc), to(#FF79DA));
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	display: flex;
-	animation: animate-coeur 2s ease-in-out 3s 1 normal both;
-}
+	-webkit-text-fill-color:transparent;
 
-@keyframes animate-coeur
-{
-	0%
-	{
+	/*animation: animate-coeur 2s ease-in-out 3s 1 normal both;*/
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-name: animation-coeur;	
+}
+ @keyframes animation-coeur {
+	
+	0% 
+	{	z-index: 0;
 		opacity: 0;
 	}
 
-	100%
-	{
+   100% 
+   {	z-index: 100;
 		opacity: 1;
 	}
-}
-
-@-webkit-keyframes animate-coeur
-{
-	0%
-	{
-		opacity: 0;
-	}
-
-	100%
-	{
-		opacity: 1;
-	}
-}
-
-@-moz-keyframes animate-coeur
-{
-	0%
-	{
-		opacity: 0;
-	}
-
-	100%
-	{
-		opacity: 1;
-	}
-}
+   }
 /* Footer */
 footer
 {

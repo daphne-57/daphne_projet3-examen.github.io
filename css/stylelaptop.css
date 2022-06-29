@@ -1,88 +1,63 @@
 
-/*Medium devices (desktop large, 1024px and up)*/
-@media screen and (min-width: 1024px)
-{
-}
-
 /*la taille des contenus tient compte du border et du padding*/
 *
 {
 	box-sizing: border-box;
 }
 
-body
-{
-	width: 1024px;
-}
 
 /* loader */
 .loader
 {
-	width: 1024px;
+	width: 100%;
 }
 
 /* header */
-.bloclogoindex
-{
-	width: 500px;
-	height: 120px;
-	padding-top: 35px;
-}
 
 .bloclogoindex img
 {
-	max-width:50%;
-	height: auto;
-	padding-top:35px;
-	margin-left: 130px;
+
 }
 
 /* conteneur recherche lieu location*/
 /* => Revoir les dimensions du texte et le centrage quand on tape*/
 .contenantrecherche
 {
-	margin: auto;
-	height: 45px;
-	background: #eaeaea;
-	/* ombre portée */
-	box-shadow: inset 0px 3px 10px 0px #898989;
-	border-radius: 25px;
-	width: 280px;
-	margin-bottom: 50px;
-	margin-left: 550px;
-	margin-top: -55px;
+    margin: auto;
+    height: 45px;
+    background: #eaeaea;
+    /* margin-bottom: 50px; */
+    margin-top: 0px;
 }
 
 /* conteneur nav explorer */
 .blocnav h1
 {
-	width: 600px;
-	text-align: left;
+
 	font-size: 24px;
 	font-weight: 700;
-	margin-left: 80px;
+
 }
 
 .blocnav p
 {
-	margin-left: 80px;
+
 }
 
 div .btnexplorer
 {
-	margin-left: 80px;
+
 }
 
 .btnexplorer p
 {
-	width: 200px;
+
 	font-weight: 400;
 	color: #fff;
 	padding-top: 15px;
 	z-index: 10;
 	font-size: 16px;
-	text-align: left;
-	margin-left: 45px;
+
 }
 
 /* conteneur filtres */

@@ -7,18 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--Médiaquéries avec les breakpoints, pour site responsive ou adaptatif-->
 
-  <!--Mobiles devices 375px and up-->
+  <!--Mobiles devices 768 px and down-->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/menus.css">
-  <!--Tablets devices 768px and up-->
-  <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/styletablets.css">
-  <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/menustablets.css">
-  <!--Tablets devices 1024px and up-->
-  <link rel="stylesheet" media="screen and (min-width: 1024px)" href="css/stylelaptop.css">
-  <link rel="stylesheet" media="screen and (min-width: 1024px)" href="css/menuslaptop.css">
-  <!--Extralarge devices 1920px and up-->
-  <link rel="stylesheet" media="screen and (min-width: 1920px)" href="css/stylextlarge.css">
-  <link rel="stylesheet" media="screen and (min-width: 1920px)" href="css/menusxtlarge.css">
+  <!--Tablets devices 769px à 992px and up-->
+  <link rel="stylesheet" media="screen and (min-width: 769px) and (max-width: 992px)" href="css/styletablets.css">
+  <link rel="stylesheet" media="screen and (min-width: 769px) and (max-width: 992px)" href="css/menustablets.css">
+  <!--Tablets devices 992px and up-->
+  <link rel="stylesheet" media="screen and (min-width: 992px)" href="css/stylelaptop.css">
+  <link rel="stylesheet" media="screen and (min-width: 992px)" href="css/menuslaptop.css">
+
   <style>
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap');
   </style>
@@ -50,25 +48,23 @@
       <div class="blocrecherche">
         <div class="rech1">
           <i class="fa-solid fa-location-dot"></i>
-        </div>
-        <div class="rech2">
-          <form>
-            <input type="text" id="destination" name="destination" placeholder="Paris, Belleville" />
-          </form>
+          <span>Paris, Belleville</span>
         </div>
       </div>
     </div>
     <!--Bouton Nav explorer nos restaurants-->
-    <div class="blocnav">
-      <h1>Réservez le menu qui vous convient</h1>
-      <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-      <div class="btnexplorer">
-        <a href="#restaurants">
-          <p>Explorer nos restaurants</p>
-        </a>
+    <div class="bg-blocnav">
+      <div class="blocnav">
+        <h1>Réservez le menu qui vous convient</h1>
+        <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+        <div class="btnexplorer">
+          <a href="#restaurants">
+            <p>Explorer nos restaurants</p>
+          </a>
+        </div>
       </div>
     </div>
-    <!--3 Boutons Filtres-->
+      <!--3 Boutons Filtres-->
     <div class="conteneurfiltres">
       <h2>Fonctionnement</h2>
       <div class="conteneurblocfiltre">
@@ -131,12 +127,14 @@
             <h4>Ménilmontant</h4>
           </div>
   <!-- Coeur effet active + animation + dégradé-->
+
           <div class="coeur1">
             <i class="fa-regular fa-heart"></i>
           </div>
           <div class="coeur2">
             <i class="fa-solid fa-heart"></i>
           </div>
+
         </a>
       </div>
       <div class="blocresto">
