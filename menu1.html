@@ -6,18 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--Médiaquéries avec les breakpoints, pour site responsive ou adaptatif-->
-  <!--Mobiles devices 375px and up-->
+  <!--Mobiles devices 768 px and down-->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/menus.css">
-  <!--Tablets devices 768px and up-->
-  <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/styletablets.css">
-  <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/menustablets.css">
-  <!--Tablets devices 1024px and up-->
-  <link rel="stylesheet" media="screen and (min-width: 1024px)" href="css/stylelaptop.css">
-  <link rel="stylesheet" media="screen and (min-width: 1024px)" href="css/menuslaptop.css">
-  <!--Extralarge devices 1920px and up-->
-  <link rel="stylesheet" media="screen and (min-width: 1920px)" href="css/stylextlarge.css">
-  <link rel="stylesheet" media="screen and (min-width: 1920px)" href="css/menusxtlarge.css">
+  <!--Tablets devices 769px à 992px and up-->
+  <link rel="stylesheet" media="screen and (min-width: 769px) and (max-width: 992px)" href="css/styletablets.css">
+  <link rel="stylesheet" media="screen and (min-width: 769px) and (max-width: 992px)" href="css/menustablets.css">
+  <!--Tablets devices 992px and up-->
+  <link rel="stylesheet" media="screen and (min-width: 992px)" href="css/stylelaptop.css">
+  <link rel="stylesheet" media="screen and (min-width: 992px)" href="css/menuslaptop.css">
   <style>
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
   </style>
@@ -28,7 +25,7 @@
 <body>
   <!--Header-->
   <header>
-  <!--Logo + flèche lien vers l'accueil-->
+    <!--Logo + flèche lien vers l'accueil-->
     <div class="bloclogomenu">
       <div class="logomenu">
         <a href="index.html">
@@ -40,39 +37,37 @@
       </div>
     </div>
   </header>
-
   <!--Main-->
-  <main>
-  <!--Image du restaurant-->
+  <main class="mainmenu1">
+    <!--Image du restaurant-->
     <div class="imgmenu">
       <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Menu la palette du goût">
     </div>
     <div class="conteneurmenus1">
       <div class="titremenu">
-
-  <!--Titre du restaurant-->        
-    <h1>La palette du goût</h1>
+        <!--Titre du restaurant-->
+        <h1>La palette du goût</h1>
       </div>
-  <!--Coeur noir non activable--> 
+      <!--Coeur noir non activable-->
       <div class="coeur3">
         <i class="fa-regular fa-heart"></i>
       </div>
-  <!--Entréé, plats, dessert, sous-titre-->        
+      <!--Entréé, plats, dessert, sous-titre-->
       <div class="titreplats">
         <h2>Entrées</h2>
       </div>
-  <!-- Animation conteneur blocs menus qui glisse -->
-      <div class="conteneurblocemnu">
-  <!--Plat à selectionner-->          
+      <!-- Animation conteneur blocs menus qui glisse -->
+      <div class="Entree_list">
+        <!--Plat à selectionner-->
         <div class="blocmenu">
-  <!--bloc texte ...-->
+          <!--bloc texte ...-->
           <div class="legende">
             <h3>Fricassée d'escargot</h3>
             <h4>Au piment d'Espelette</h4>
-  <!--bloc Prix <-  -->
+            <!--bloc Prix <-  -->
             <p class="prix">25 €</p>
           </div>
-  <!--Animation bloc vert et check-->        
+          <!--Animation bloc vert et check-->
           <div class="blocvert">
             <a href="#">
               <i class="fa-solid fa-circle-check"></i>
@@ -107,7 +102,7 @@
       <div class="titreplats">
         <h2>Plats</h2>
       </div>
-      <div class="conteneurblocemnu">
+      <div class="Plats_list">
         <div class="blocmenu">
           <div class="legende">
             <h3>Filet de boeuf aux herbes</h3>
@@ -148,7 +143,7 @@
       <div class="titreplats">
         <h2>Desserts</h2>
       </div>
-      <div class="conteneurblocemnu">
+      <div class="Desserts_list">
         <div class="blocmenu">
           <div class="legende">
             <h3>Paris-Brest</h3>
@@ -186,7 +181,7 @@
           </div>
         </div>
       </div>
-  <!--Bouton commander + tunnel de vente-->
+      <!--Bouton commander + tunnel de vente-->
       <div class="btncommander">
         <a href="#">
           <p>Commander</p>
@@ -196,11 +191,11 @@
   </main>
   <!--Footer-->
   <footer>
-  <!--Logo-->
+    <!--Logo-->
     <div class="logofooter">
       <img src="images/logo/ohmyfood.png" alt="Logo ohmyfood blanc">
     </div>
-  <!--Liste mentions légales et contact par mail-->
+    <!--Liste mentions légales et contact par mail-->
     <div class="listefooter">
       <ul>
         <li>
