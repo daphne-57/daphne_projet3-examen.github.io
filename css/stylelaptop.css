@@ -23,12 +23,17 @@
 /* => Revoir les dimensions du texte et le centrage quand on tape*/
 .contenantrecherche
 {
-    margin: auto;
-    height: 45px;
+    /* margin: auto; */
+    /* height: 45px; */
     background: #eaeaea;
+    /* box-shadow: inset 0px 3px 10px 0px #898989; */
+    /* border-radius: 25px; */
+    /* width: 280px; */
     /* margin-bottom: 50px; */
-    margin-top: 0px;
-}
+    /* margin-left: 360px; */
+    /* margin-top: -40px;*/
+	
+	}
 
 /* conteneur nav explorer */
 .blocnav h1

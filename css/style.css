@@ -446,50 +446,27 @@ div .btnexplorer
 	position: absolute;
 	margin-left: 285px;
 	margin-top: -80px;
-	background-color: rgb(255,255,255,1);
-	color: #000000;
-	z-index:1; 
+	color: #000;
+	background-color: #fff;
 	opacity: 1;
-	visibility: visible;
+	z-index: 1;
 }
 .coeur1:hover 
 {
-	z-index:0; 
 	opacity: 0;
-	visibility: hidden;
-	display:none;
-	background-color: rgb(255,255,255,0);
-
+	transition: all 1s ease-in-out;
 }
 .coeur2 
-{	/* z-index: 1; => bloc qui s'affiche tout seule partout et qui ne part pas */
+{	
 	font-size: 25px;
 	position: absolute;
 	margin-left: 285px;
 	margin-top: -80px;
-	background-color: rgb(255,255,255,1);
-	background: 
-	-webkit-gradient(linear, left top, left bottom, from( #9356dc), to(#FF79DA));
+	background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
 	-webkit-background-clip: text;
-	-webkit-text-fill-color:transparent;
-
-	/*animation: animate-coeur 2s ease-in-out 3s 1 normal both;*/
-	animation-duration: 1s;
-	animation-iteration-count: 1;
-	animation-name: animation-coeur;	
+	-webkit-text-fill-color: transparent;
+	z-index: 0
 }
- @keyframes animation-coeur {
-	
-	0% 
-	{	z-index: 0;
-		opacity: 0;
-	}
-
-   100% 
-   {	z-index: 100;
-		opacity: 1;
-	}
-   }
 /* Footer */
 footer
 {
