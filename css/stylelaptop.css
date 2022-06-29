@@ -51,7 +51,7 @@
 
 div .btnexplorer
 {
-
+	width: 45%;
 }
 
 .btnexplorer p
@@ -66,12 +66,20 @@ div .btnexplorer
 }
 
 /* conteneur filtres */
+.blocfiltre
+{
+	justify-content: center;
+}
 .conteneurfiltres h2
 {
 	margin-left: 80px;
-	padding-top: 20px;
 }
-
+.oblongue{
+	width: 50%;
+}
+.oblongue i {
+	padding-left: 10%;
+}
 /* Main */
 .conteneurrestos
 {
@@ -120,8 +128,8 @@ div .btnexplorer
 
 .blocnew
 {
-	margin-left: 235px;
-	margin-top: -165px;
+	width: 8%;
+	margin-left: 13%;
 }
 
 /* Position absolute Coeur hover + dégradé + main +  */
@@ -142,24 +150,24 @@ div .btnexplorer
 }
 
 /* Footer */
+footer
+{
+	height: 40%;
+}
+
 .logofooter img
 {
 	width: 25%;
-	padding-top: 40px;
-	padding-left: 80px;
-filter: invert(100%)}
+	height: 25%;
+	padding-top: 5%;
 
-footer
-{
-	height: 160px;
-	background: #353535;
 }
 
 .listefooter ul
 {
-	width: 944px;
+	width: 90%;
 	list-style-type: none;
-	padding-top: 10px;
+
 	display: flex;
 	justify-content: space-between;
 }
@@ -169,10 +177,9 @@ footer
 	color: #fff;
 	display: flex;
 	line-height: 100%;
-	padding-left: 60px;
-}
+	}
 
 .listefooter i
 {
-	padding-right: 15px;
+	padding-right: 5%;
 }

@@ -5,34 +5,37 @@
 {
 	box-sizing: border-box;
 }
-
+body{
+	max-width: 1920px;
+	margin: auto;
+}
 /* header */
 
 .bloclogomenu
 {
-	width: 300px;
-	height: 70px;
+height: 70px;
+
+
 }
 /* Logo */
 .logomenu
 {
-	height: 70px;
-	width: 300px;
-	padding-top: 23px;
+	height: 35%;
+	padding-top:5%;
 }
 .logomenu img
 {
-	width: 55%;
-	margin-left: 100px;
+	width: 60%;
+	margin-left: 20%;
 }
 /* flèche lien vers l'accueil */
 .logomenu i
-{
+{	
+	margin-top: -8%;
 	position: absolute;
-	margin-top: -27px;
 	font-size: 20px;
 	color: #000;
-	margin-left: 70px;
+	margin-left: 10%;
 }
 
 /* Main */
@@ -40,7 +43,7 @@
 /* Image du restaurant */
 .imgmenu img
 {
-	width: 375px;
+	width: 100%;
 	height: 250px;
 	object-fit: cover;
 	opacity: 1;
@@ -67,7 +70,7 @@ main .conteneurmenus2
 /* Titre du restaurant */    
 .titremenu h1
 {
-	font-size: 27px;
+	font-size: 150%;
 	font-family: 'Shrikhand', cursive;
 	margin-left: 20px;
 	padding-top: 25px;
@@ -75,12 +78,12 @@ main .conteneurmenus2
 /* Coeur noir non activable */
 .coeur3
 {
-	font-size: 25px;
+	font-size: 130%;
 	position: absolute;
 	color: #000;
 	z-index: 2;
-	margin-left: 320px;
-	margin-top: -55px;
+	margin-left: 85%;
+	margin-top: -14%;
 }
 /* Entréé, plats, dessert, sous-titre */      
 .titreplats
@@ -166,14 +169,14 @@ main .conteneurmenus2
 {
 	animation: fadein;
 	height: 75px;
-	width: 350px;
+	width:95% ;
 	background: #fff;
 	border-radius: 15px;
 	box-shadow: 0px 5px 20px -2px #C2C2C2;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	margin-left: 10px;
+	margin-left: 3%;
 	margin-top: 20px;
 	z-index: 0;
 	opacity: 1;
@@ -188,7 +191,7 @@ main .conteneurmenus2
 .blocmenu .legende h3
 {
 	padding-top: 5px;
-	font-size: 18px;
+	font-size: 95%;
 	font-weight: 700;
 	padding-left: 0px;
 	margin-right: 0px;
@@ -196,12 +199,12 @@ main .conteneurmenus2
 	overflow: hidden;
 	white-space: nowrap;
 	margin-left: 10px;
-	width: 280px;
+	width: 85%;
 }
 .blocmenu .legende h4
 {
 	padding-top: 5px;
-	font-size: 15px;
+	font-size: 85%;
 	font-weight: 300;
 	margin-right: 0px;
 /* Bloc texte plus court = ...*/
@@ -210,19 +213,19 @@ main .conteneurmenus2
 	white-space: nowrap;
 	margin-left: 10px;
 	padding-left: 0px;
-	width: 280px;
+	width: 85%;
 }
 .blocmenu:hover .legende h3
 {
-	width: 230px;
+	width: 80%;
 }
 .blocmenu:hover .legende h4
 {
-	width: 230px;
+	width: 80%;
 }
 .legende:hover
 {
-	width: 300px;
+	width: 75%;
 	height: 80px;
 	
 }
@@ -231,19 +234,20 @@ main .conteneurmenus2
 	z-index: 2;
 	width: 50px;
 	height: 25px;
-	font-size: 15px;
+	font-size: 80%;
 	font-weight: 500;
 	position: relative;
-	margin-top: -40px;
-	margin-left: 300px;
+	margin-top: -11%;
+	margin-left: 90%;
 	padding-left: 0px;
 }
 /* bloc prix <- */
 .blocmenu:hover .prix
 {
-	margin-right: -50px;
+	margin-right: -15%;
 	position: relative;
-	margin-left: 250px;
+	margin-left: 90%;
+	margin-top: -14%;
 }
 
 .blocmenu .blocvert
@@ -255,31 +259,30 @@ main .conteneurmenus2
 {
 	z-index: 1;
 	background: #fff;
-	width: 60px;
+	width:60%;
 	height: 75px;
 	text-align: center;
 	border-radius: 0px 15px 15px 0px;
 	position: absolute;
-	margin-left: 295px;
+
 }
 /* Animation bloc vert */
 .blocmenu:hover .blocvert
 {
 	z-index: 1;
 	background: #99e2d0;
-	width: 60px;
+	width: 30%;
 	height: 75px;
 	text-align: center;
 	border-radius: 0px 15px 15px 0px;
 	position: relative;
 	margin-top: -80px;
-	margin-left: 354px;
+	margin-left:100%;
 	animation-duration: 1s;
 	animation-name: glissement-blocvert;
 	animation-iteration-count: 1;
 	animation-direction: reverse;
 	animation-fill-mode:forwards;
-
 }
 @keyframes glissement-blocvert
 {
@@ -287,7 +290,7 @@ main .conteneurmenus2
 	{
 		width: 70px;
 		transform: translate(-65px);
-		margin-right: -70px;
+		margin-right: -40%;
 	}
 	to
 	{

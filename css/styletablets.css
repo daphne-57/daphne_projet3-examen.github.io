@@ -74,9 +74,12 @@
 /* conteneur nav explorer */
 .blocnav
 {
-	height: 200px;
-	background: #f6f6f6;
-	padding-top: 25px;
+    padding-top: 45px;
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 45px;
+}
 }
 
 .blocnav h1
@@ -90,18 +93,13 @@
 
 .blocnav p
 {
-	width:600px;
-	font-size: 18px;
-	font-weight: 300;
-	padding-top: 10px;
-	text-align: left;
-	margin-left: 40px;
+
 }
 
 div .btnexplorer
 {
 	height: 50px;
-
+	width: 55%;
 	border-radius: 25px;
 	background: #9356dc;
 	z-index: 0;
@@ -109,14 +107,13 @@ div .btnexplorer
 	background: linear-gradient(#FF79DA, #9356dc);
 	/* ombre portée */
 	box-shadow: 0px 3px 10px 0px #898989;
-	text-align: left;
+	text-align: center;
 
 }
 
 .btnexplorer :hover
 {
 	height: 50px;
-	width: 260px;
 	border-radius: 25px;
 	background: #9356dc;
 	/* dégradé dans un bloc */
@@ -128,40 +125,31 @@ div .btnexplorer
 
 .btnexplorer p
 {
-	width: 200px;
-	font-weight: 400;
-	color: #fff;
-	padding-top: 15px;
-	z-index: 10;
-	font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    padding-top: 15px;
+    z-index: 10;
+    font-size: 16px;
 }
-
 .btnexplorer a
 {
 	text-decoration: none;
 }
 
 /* conteneur filtres */
-.conteneurfiltres
-{
-	height: 400px;
-	margin-top: 0px;
-	padding-top: 0px;
-}
-
 .conteneurfiltres h2
 {
 	font-size: 24px;
-	font-weight: 700;
-	margin-top: 40px;
-	padding-top: 0px;
-	margin-left: 40px;
+    font-weight: 700;
+    padding-top: 40px;
+    padding-bottom: 10px;
+	margin-left: 80px;
 }
+
 
 .blocfiltre
 {
 	height: 75px;
-	margin-bottom:40px;
 	justify-content: center;
 	align-items: center;
 }
@@ -178,7 +166,6 @@ div .btnexplorer
 	color: #9356dc;
 }
 
-/* Attention fond bleu au clic à enlever*/
 .rondoblongue
 {
 	height: 25px;
@@ -203,7 +190,7 @@ div .btnexplorer
 .oblongue
 {
 	height: 75px;
-	width: 400px;
+	width: 50%;
 	background: #f6f6f6;
 	border-radius: 25px;
 	box-shadow: 0px 5px 20px -2px #C2C2C2;
@@ -222,7 +209,7 @@ div .btnexplorer
 .oblongue i
 {
 	padding-top: 30px;
-	padding-left: 80px;
+	padding-left: 10%;
 	font-size: 18px;
 	color: #777;
 }
@@ -241,23 +228,28 @@ div .btnexplorer
 .conteneurrestos
 {
 	height: 1320px;
+	
 }
+/* Bloc restaurant */    
+
 
 .conteneurrestos h2
 {
-	margin-left: 20px;
-	padding-top: 40px;
+	margin-left: 80px;
+    padding-top: 60px;
+    font-size: 24px;
 }
 
 .blocresto
 {
-	width: 435px;
+	width: 40%;
 	margin-bottom: 50px;
+
 }
 
 .blocresto img
 {
-	width: 435px;
+
 	height: 175px;
 	object-fit: cover;
 	border-radius: 25px 25px 0px 0px;
@@ -265,13 +257,15 @@ div .btnexplorer
 
 .blocnew
 {
-	margin-left: 340px;
+	width: 15%;
+	margin-left: 22%;
 }
+
 
 /* Position absolute Coeur hover + dégradé + main +  */
 .coeur1
 {
-	margin-left: 380px;
+	margin-left:35%;
 }
 
 .coeur1:hover
@@ -282,27 +276,28 @@ div .btnexplorer
 /* Vous employez des fonctions qui sont propres à certains #Navigateurs, comme #FireFox ou autres. Ce sont les arrondis, les dégradés et d'autres aspects. => erreurs W3C */
 .coeur2
 {
-	margin-left: 380px;
+	margin-left:35%;
 }
 
 /* Footer */
 footer
 {
-	height: 160px;
+	height: 40%;
 }
 
 .logofooter img
 {
 	width: 25%;
-	padding-top: 40px;
-	padding-left: 40px;
-	filter: invert(100%)}
+	height: 25%;
+	padding-top: 5%;
+
+}
 
 .listefooter ul
 {
-	width: 728px;
+	width: 90%;
 	list-style-type: none;
-	padding-top: 10px;
+
 	display: flex;
 	justify-content: space-between;
 }
@@ -312,10 +307,9 @@ footer
 	color: #fff;
 	display: flex;
 	line-height: 100%;
-	padding-left: 20px;
-}
+	}
 
 .listefooter i
 {
-	padding-right: 15px;
+	padding-right: 5%;
 }

@@ -1,5 +1,4 @@
 
-
 /*la taille des contenus tient compte du border et du padding*/
 *
 {
@@ -162,13 +161,6 @@ body
 	/* ombre portee */
 	box-shadow: inset 0px 10px 10px -10px #bdbdbd;
 }
-
-.blocrecherche
-{
-
-
-}
-
 div .rech1
 {
 	max-width: 239px;
@@ -212,7 +204,7 @@ div.rech2
 .blocnav
 {
     padding-top: 45px;
-    max-width: 700px;
+    max-width: 85%;
     margin: auto;
     text-align: center;
     padding-bottom: 45px;
@@ -229,7 +221,7 @@ div.rech2
     font-size: 18px;
     font-weight: 300;
     /* padding-top: 25px; */
-    padding-bottom: 19px;
+    /*padding-bottom: 19px;*/
 }
 
 div .btnexplorer
@@ -239,7 +231,7 @@ div .btnexplorer
 	border-radius: 25px;
 	background: #9356dc;
 	z-index: 0;
-	max-width: 334px;
+	max-width: 58%;
 	margin: auto;
 
 	/* degrade dans un bloc */
@@ -251,7 +243,7 @@ div .btnexplorer
 .btnexplorer :hover
 {
 	height: 50px;
-	width:58%;
+
 	border-radius: 25px;
 	background: #9356dc;
 	z-index: 0;
@@ -277,15 +269,15 @@ div .btnexplorer
 /* 3 Boutons Filtres */
 .conteneurfiltres
 {
-	height: 440px;
+	height: 400px;
 }
 .conteneurfiltres h2
 {
-	font-size: 24px;
-	font-weight: 700;
-	padding-top: 50px;
-	margin-left: 20px;
-	padding-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 40px;
+    margin-left: 20px;
+    padding-bottom: 10px;
 }
 .blocfiltre
 {
@@ -293,6 +285,7 @@ div .btnexplorer
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 25px;
+	justify-content: center;
 }
 /* Effet fond violet clair */
 .blocfiltre :hover
@@ -310,11 +303,10 @@ div .btnexplorer
 .rondoblongue
 {
 	height: 25px;
-	width:6%;
+	width: 25px;
 	border-radius: 50%;
 	color: #fff;
 	background-color: #9356dc;
-	margin-left: 20px;
 	z-index: 1;
 	margin-top: 25px;
 }
@@ -327,10 +319,11 @@ div .btnexplorer
 	font-size: 14px;
 }
 /* Forme oblongue gris clair */
+
 .oblongue
 {
 	height: 75px;
-	width: 85%;
+	width: 80%;
 	background: #f6f6f6;
 	border-radius: 25px;
 	box-shadow: 0px 5px 20px -2px #C2C2C2;
@@ -349,7 +342,7 @@ div .btnexplorer
 .oblongue i
 {
 	padding-top: 30px;
-	padding-left: 30px;
+	padding-left: 10%;
 	font-size: 18px;
 	color: #777;
 }
@@ -358,7 +351,7 @@ div .btnexplorer
 {
 	font-weight: 500;
 	font-size: 16px;
-	padding-left: 20px;
+	padding-left: 5%;
 	width: 100%;
 	padding-top: 15px;
 	text-decoration: none;
@@ -403,11 +396,11 @@ div .btnexplorer
 /* Etiquette nouveau */
 .blocnew
 {
-	width: 21%;
+	width: 30%;
 	height: 30px;
 	background-color: #99e2d0;
 	position: absolute;
-	margin-left: 235px;
+	margin-left: 55%;
 	margin-top: -165px;
 }
 
@@ -444,7 +437,7 @@ div .btnexplorer
 {
 	font-size: 25px;
 	position: absolute;
-	margin-left: 285px;
+	margin-left: 75%;
 	margin-top: -80px;
 	color: #000;
 	background-color: #fff;
@@ -460,7 +453,7 @@ div .btnexplorer
 {	
 	font-size: 25px;
 	position: absolute;
-	margin-left: 285px;
+	margin-left: 75%;
 	margin-top: -80px;
 	background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
 	-webkit-background-clip: text;
@@ -470,8 +463,9 @@ div .btnexplorer
 /* Footer */
 footer
 {
-	height: 260px;
+	height: 35%;
 	background: #353535;
+	width: 100%;
 }
 .listefooter
 {
@@ -480,16 +474,19 @@ footer
 /* Logo */
 .logofooter img
 {
-	width: 40%;
-	padding-top: 40px;
-	padding-left: 20px;
-	filter: invert(100%)}
+	width: 35%;
+	height: 35%;
+	padding-top: 5%;
+	padding-left: 5%;
+	filter: invert(100%)
+}
+
 /* Liste mentions légales + Mailto */
 .listefooter ul
-{
+{	width: 80%;
 	list-style-type: none;
-	padding-left: 20px;
-	padding-top: 10px;
+	padding-left: 5%;
+
 }
 
 .listefooter ul li
@@ -508,9 +505,10 @@ footer
 .listefooter p
 {
 	margin-top: 0px;
+	width: 200%;
 }
 
 .listefooter i
 {
-	padding-right: 15px;
+	padding-right: 5%;
 }
