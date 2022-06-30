@@ -91,16 +91,11 @@ div .btnexplorer
 {
 	padding-top: 60px;
 }
-
-.conteneurblocresto
-{
+.conteneurblocresto{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
-	margin-left: 110px;
-	margin-right: 110px;
-	padding-top: 30px;
+	justify-content: center;
 }
 
 .conteneurrestos h2

@@ -358,10 +358,17 @@ div .btnexplorer
 /* Main */
 
 /* Liste des restaurants */
+.conteneurblocresto{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
 .conteneurrestos
 {
 	background: #f6f6f5;
 	height: 1300px;
+
 }
 .conteneurrestos h2
 {
@@ -379,6 +386,7 @@ div .btnexplorer
 	margin: auto;
 	margin-bottom: 20px;
 	box-shadow: 0px 3px 10px 0px #d3d1d1;
+
 }
 .blocresto a
 {
