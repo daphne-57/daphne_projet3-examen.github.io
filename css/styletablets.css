@@ -20,7 +20,7 @@
 
 .bloclogoindex img
 {
-	height: 83%;
+	height: 75%;
 }
 
 /* conteneur recherche lieu location*/
@@ -45,10 +45,6 @@
 	margin-left: 40px;
 }
 
-.rech1
-{
-
-}
 
 .rech1 i
 {
@@ -80,7 +76,7 @@
     text-align: center;
     padding-bottom: 45px;
 }
-}
+
 
 .blocnav h1
 {
@@ -91,10 +87,6 @@
 	margin-left: 40px;
 }
 
-.blocnav p
-{
-
-}
 
 div .btnexplorer
 {
@@ -227,7 +219,7 @@ div .btnexplorer
 /* Main */
 .conteneurrestos
 {
-	height: 1320px;
+	height: 1364px;
 	
 }
 /* Bloc restaurant */    

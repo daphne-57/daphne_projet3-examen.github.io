@@ -5,47 +5,36 @@
 {
 	box-sizing: border-box;
 }
-
-
 /* header */
 .bloclogomenu
 {
-	width: 900px;
-	height: 155px;
+	height: 140px;
+	text-align: center;
 }
-
 .logomenu
 {
-	height: 120px;
-	width: 500px;
-	padding-top: 55px;
-	margin-left: 310px;
+	padding-top: 50px;
 }
-
 .logomenu img
 {
-	width: 50%;
+	width: 260px;
 }
-
 .logomenu i
 {
 	position: absolute;
-	margin-top: -35px;
-	font-size: 20px;
+	font-size: 30px;
 	color: #000;
-	padding-left: 0px;
+	margin-left: -170px;
+	margin-top: -40px;
 }
-
 /* Main */
 .imgmenu img
 {
-	width: 1024px;
 	height: 250px;
 	object-fit: cover;
 	opacity: 1;
 	z-index: 0;
 }
-
 main .conteneurmenus1,  .conteneurmenus3, .conteneurmenus4
 {
 	height: 1050px;
@@ -53,33 +42,59 @@ main .conteneurmenus1,  .conteneurmenus3, .conteneurmenus4
 
 main  .conteneurmenus2
 {
-	height: 1050px;
+	height: 1150px;
 }
-
+/* Titre du restaurant */   
+.titremenu{
+	justify-content: center;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	} 
 .titremenu h1
 {
-	width: 900px;
-	font-size: 35px;
-	padding-left: 90px;
+	padding-top: 40px;
+	font-size: 40px;
 }
 
 .coeur3
 {
-	margin-left: 700px;
-	margin-top: -65px;
+	margin-top: 80px;
+	font-size: 30px;
+
+}
+.titreplats
+{
+    margin-left: 20px;
+    border-bottom: 2px solid #99e2d0;
+    width: 40px;
+    margin-bottom: 3%;
 }
 
 .titreplats h2
 {
-	font-size: 16px;
+	font-size: 18px;
 	padding-top: 20px;
-	margin-left: 0px;
 }
 
-.titreplats
+
+.conteneurblocemnu
 {
-	border-bottom: 2px solid #99e2d0;
-	width: 40px;
-	margin-top: 0px;
-	margin-left: 80px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.blocmenu
+{
+	height: 75px;
+	width: 355px;
+	background: #fff;
+	border-radius: 15px;
+	box-shadow: 0px 5px 20px -2px #C2C2C2;
+	margin-left: 10px;
+	margin-top: 20px;
+	z-index: 0;
+	opacity: 1;
+	margin-right: 10px;
 }

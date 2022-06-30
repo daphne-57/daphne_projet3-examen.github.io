@@ -6,8 +6,7 @@
 }
 body
 {
-
-	max-width: 1920px;
+	width: 100%;
 	background-color: rgb(255,255,255,1);
 	margin: auto;
 	font-family: 'Roboto', sans-serif;
@@ -148,7 +147,7 @@ body
 
 .bloclogoindex img
 {
-	height: 83%;
+	height: 70%;
 }
 /* Input Localisation */
 .contenantrecherche
@@ -231,7 +230,7 @@ div .btnexplorer
 	border-radius: 25px;
 	background: #9356dc;
 	z-index: 0;
-	max-width: 58%;
+	max-width: 70%;
 	margin: auto;
 
 	/* degrade dans un bloc */
@@ -362,7 +361,7 @@ div .btnexplorer
 .conteneurrestos
 {
 	background: #f6f6f5;
-	height: 1250px;
+	height: 1300px;
 }
 .conteneurrestos h2
 {
