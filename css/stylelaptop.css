@@ -89,24 +89,32 @@ div .btnexplorer
 {
 	padding-top: 60px;
 }
+/* Main */
+/* Liste des restaurants */
 .conteneurblocresto{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
 }
-
+.conteneurrestos
+{
+	height: 760px;
+	
+}
 .conteneurrestos h2
 {
-	margin-left: 60px;
-	padding-top: 80px;
+	padding-top: 60px;
+	font-size: 24px;
+	margin-left: 20px;
 }
 
 .blocresto
 {
 	height: 255px;
-	width: 335px;
-	margin-left: 2%;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 20px;
 }
 
 .blocresto img
@@ -118,7 +126,7 @@ div .btnexplorer
 .blocnew
 {
 	width: 8%;
-	margin-left: 195px;
+	margin-left: 22%;
 }
 
 /* Position absolute Coeur hover + dégradé + main +  */
