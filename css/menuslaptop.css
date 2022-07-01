@@ -8,24 +8,21 @@
 /* header */
 .bloclogomenu
 {
-	height: 140px;
-	text-align: center;
-}
-.logomenu
-{
-	padding-top: 50px;
+height: 90px;
+text-align: center;
+padding-top: 25px;
 }
 .logomenu img
 {
-	width: 260px;
+	height: 40px;
 }
 .logomenu i
 {
 	position: absolute;
-	font-size: 30px;
+	font-size: 25px;
 	color: #000;
-	margin-left: -170px;
-	margin-top: -40px;
+	margin-left: -150px;
+	margin-top: -35px;
 }
 /* Main */
 .imgmenu img

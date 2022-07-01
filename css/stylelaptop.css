@@ -13,7 +13,17 @@
 .loader span{
 	font-size: 65px;
 }
+.bloclogoindex
+{
+    height: 90px;
+    text-align: center;
+    padding-top: 25px;
+}
 
+.bloclogoindex img
+{
+	height: 40px;
+}
 /* header */
 
 
@@ -36,16 +46,13 @@
 /* conteneur nav explorer */
 .blocnav h1
 {
-
 	font-size: 24px;
 	font-weight: 700;
-
 }
 div .btnexplorer
 {
 	width: 45%;
 }
-
 .btnexplorer p
 {
 	font-weight: 400;
@@ -53,7 +60,6 @@ div .btnexplorer
 	z-index: 10;
 	font-size: 16px;
 }
-
 /* conteneur filtres */
 .blocfiltre
 {
@@ -74,13 +80,11 @@ div .btnexplorer
 {
 	height: 760px;
 }
-
 .conteneurrestos h2
 {
 	margin-left: 20px;
 	margin-top: 20px;
 }
-
 #restaurants
 {
 	padding-top: 60px;
