@@ -84,15 +84,14 @@ body
 /* Loader Lettres à lettres */
 .loader span
 {
-	width: auto;
 	height: 30px;
 	z-index: 999;
 	opacity: 1;
 	color: #9356DC;
-	font-size: 50px;
-	margin-bottom: 40px;
+	font-size: 35px;
 	font-family: 'Shrikhand', cursive;
 	display: flex;
+	margin-bottom: 40px;
 	animation-name: flash;
 	animation-duration: 3s;
 	animation-iteration-count:infinite;
@@ -147,7 +146,7 @@ body
 
 .bloclogoindex img
 {
-	height: 70%;
+	height: 33px;
 }
 /* Input Localisation */
 .contenantrecherche
@@ -169,7 +168,7 @@ div .rech1
 
 .rech1 i
 {
-	margin-right: 15px;
+	margin-right: 10px;
 	height: 50px;
 	padding-top: 17px;
 }
@@ -225,24 +224,22 @@ div.rech2
 
 div .btnexplorer
 {
-	text-align: center;
-	height: 50px;
+	height: 45px;
 	border-radius: 25px;
 	background: #9356dc;
 	z-index: 0;
-	max-width: 70%;
+	max-width: 60%;
 	margin: auto;
-
 	/* degrade dans un bloc */
 	background: linear-gradient(#FF79DA, #9356dc);
 	/* ombre portee */
 	box-shadow: 0px 3px 10px 0px #898989;
+	text-align: center;
 }
 
 .btnexplorer :hover
 {
-	height: 50px;
-
+	height: 45px;
 	border-radius: 25px;
 	background: #9356dc;
 	z-index: 0;
@@ -254,12 +251,12 @@ div .btnexplorer
 }
 .btnexplorer p
 {
-
+	height: 50px;
 	font-weight: 400;
 	color: #fff;
-	padding-top: 15px;
 	z-index: 10;
 	font-size: 16px;
+	padding-top: 10px;
 }
 .btnexplorer a
 {
@@ -372,9 +369,9 @@ div .btnexplorer
 }
 .conteneurrestos h2
 {
-	padding-left: 20px;
 	padding-top: 60px;
 	font-size: 24px;
+	margin-left: 20px;
 }
 /* Bloc restaurant */    
 .blocresto
@@ -469,53 +466,54 @@ div .btnexplorer
 }
 /* Footer */
 footer
-{
-	height: 35%;
+{	
+	height: 240px;
 	background: #353535;
-	width: 100%;
-}
-.listefooter
-{
-	display: flex;
+	margin-left: 0;
+	padding-left: 0;
 }
 /* Logo */
 .logofooter img
 {
-	width: 35%;
-	height: 35%;
-	padding-top: 5%;
-	padding-left: 5%;
-	filter: invert(100%)
+	height: 25px;
+	filter: invert(100%);
+	margin-top: 20px;
+	margin-left: 20px;
+	padding-left: 0;
 }
-
+.listefooter
+{	
+	display: flex;
+	width: 100%;
+}
 /* Liste mentions légales + Mailto */
 .listefooter ul
-{	width: 80%;
+{	
 	list-style-type: none;
-	padding-left: 5%;
-
+	margin-left: 20px;
+	padding-left: 0;
+	width: 100%;
 }
-
 .listefooter ul li
 {
 	color: #fff;
+	line-height: 120%;
+	width: 100%;
 	display: flex;
-	line-height: 100%;
-}
 
+}
+.listefooter i
+{
+	padding-right: 10px;
+}
 .listefooter a
 {
 	color: #fff;
 	text-decoration: none;
 }
-
 .listefooter p
 {
 	margin-top: 0px;
-	width: 200%;
+	max-width: 200px;
 }
 
-.listefooter i
-{
-	padding-right: 5%;
-}
