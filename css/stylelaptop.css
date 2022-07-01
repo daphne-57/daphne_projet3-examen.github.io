@@ -4,22 +4,18 @@
 {
 	box-sizing: border-box;
 }
-
-
 /* loader */
 .loader
 {
 	width: 100%;
 }
 
-/* header */
-
-/* header */
-
-.bloclogoindex img
-{
-	height: 80%;
+.loader span{
+	font-size: 65px;
 }
+
+/* header */
+
 
 /* conteneur recherche lieu location*/
 /* => Revoir les dimensions du texte et le centrage quand on tape*/
@@ -52,10 +48,8 @@ div .btnexplorer
 
 .btnexplorer p
 {
-
 	font-weight: 400;
 	color: #fff;
-	padding-top: 15px;
 	z-index: 10;
 	font-size: 16px;
 }
@@ -78,7 +72,7 @@ div .btnexplorer
 /* Main */
 .conteneurrestos
 {
-	height: 770px;
+	height: 760px;
 }
 
 .conteneurrestos h2
@@ -143,34 +137,31 @@ div .btnexplorer
 /* Footer */
 footer
 {
-	height: 40%;
+	height: 170px;
 }
-
+/* Logo */
 .logofooter img
 {
-	width: 25%;
-	height: 25%;
-	padding-top: 5%;
-
+	height: 40px;
+	margin-top: 40px;
+	margin-left: 40px;
+	padding-left: 0;
 }
-
+.listefooter
+{
+	display: flex;
+	width: 100%;
+}
 .listefooter ul
-{
-	width: 90%;
+{	
+	margin-left: 40px;
+	padding-left: 0;
 	list-style-type: none;
-
 	display: flex;
-	justify-content: space-between;
+	flex-direction: row;
+	justify-content: space-around;
 }
-
-.listefooter ul li
-{
-	color: #fff;
-	display: flex;
-	line-height: 100%;
-	}
-
 .listefooter i
 {
-	padding-right: 5%;
+	padding-right:10px;
 }
