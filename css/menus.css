@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 }
 body{
+	/*width: 1500px;*/
 	width: 100%;
 	margin: auto;
 }
@@ -21,7 +22,7 @@ body{
 }
 .logomenu img
 {
-	height: 33px;
+	height: 31px;
 }
 /* flèche lien vers l'accueil */
 .logomenu i
@@ -43,7 +44,10 @@ body{
 }
 main .conteneurmenus1, .conteneurmenus3, .conteneurmenus4
 {
-	height: 1320px;
+		/* pas de hauteur bloquée juste un padding bottome pour avoir une marge minimum */
+		padding-bottom: 50px;
+		padding-left: 20px;
+		padding-right: 20px;
 	background-color: #f6f6f6;
 	opacity: 0.99;
 	margin-top: -120px;
@@ -52,7 +56,10 @@ main .conteneurmenus1, .conteneurmenus3, .conteneurmenus4
 }
 main .conteneurmenus2
 {
-	height: 1450px;
+		/* pas de hauteur bloquée juste un padding bottome pour avoir une marge minimum */
+		padding-bottom: 50px;
+		padding-left: 20px;
+		padding-right: 20px;
 	background-color: #f6f6f6;
 	opacity: 0.99;
 	margin-top: -120px;
@@ -171,7 +178,7 @@ flex-direction: row;
 {
 	animation: fadein;
 	height: 75px;
-	width: 95%;
+	width: 100%;
 	max-width: 350px;
 	background: #fff;
 	border-radius: 15px;
@@ -356,15 +363,16 @@ flex-direction: row;
 	color: #fff;
 	margin-top: 25px;
 	font-size: 0px;
-	-webkit-transition:  .5s ease-in;
-	transition:  .5s ease-in;
+	/* Rond parasite */
+	/*-webkit-transition:  .5s ease-in;
+	transition:  .5s ease-in;*/
 }
 /* Bouton commander dégradé */
 
 div .btncommander
 {
 	height: 50px;
-	max-width: 250px;
+	max-width: 150px;
 	border-radius: 25px;
 	background: #9356DC;
 	z-index: 0;

@@ -34,12 +34,18 @@ padding-top: 25px;
 }
 main .conteneurmenus1,  .conteneurmenus3, .conteneurmenus4
 {
-	height: 1050px;
+	/* pas de hauteur bloquée juste un padding bottome pour avoir une marge minimum */
+	padding-bottom: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 main  .conteneurmenus2
 {
-	height: 1150px;
+	/* pas de hauteur bloquée juste un padding bottome pour avoir une marge minimum */
+	padding-bottom: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 /* Titre du restaurant */   
 .titremenu{

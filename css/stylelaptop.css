@@ -67,7 +67,7 @@ div .btnexplorer
 }
 .conteneurfiltres h2
 {
-	margin-left: 80px;
+	margin-left: 40px;
 }
 .oblongue{
 	width: 50%;
@@ -78,7 +78,10 @@ div .btnexplorer
 /* Main */
 .conteneurrestos
 {
-	height: 760px;
+	/* pas de hauteur bloquée juste un padding bottome pour avoir une marge minimum */
+	padding-bottom: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 .conteneurrestos h2
 {
@@ -99,7 +102,9 @@ div .btnexplorer
 }
 .conteneurrestos
 {
-	height: 760px;
+	padding-bottom: 50px;
+	padding-left: 40px;
+	padding-right: 40px;
 	
 }
 .conteneurrestos h2
@@ -112,27 +117,27 @@ div .btnexplorer
 .blocresto
 {
 	height: 255px;
-	width: 90%;
+	width: 355px;
 	margin: auto;
 	margin-bottom: 20px;
 }
 
 .blocresto img
 {
-	width: 335px;
+	width: 100%;
 	height: 175px;
 }
 
 .blocnew
 {
-	width: 8%;
-	margin-left: 22%;
+    width: 100px;
+    margin-left: 225px;
 }
 
 /* Position absolute Coeur hover + dégradé + main +  */
 .coeur1
 {
-	margin-left: 285px;
+	margin-left: 310px;
 }
 
 .coeur1:hover
@@ -143,7 +148,7 @@ div .btnexplorer
 /* Vous employez des fonctions qui sont propres à certains #Navigateurs, comme #FireFox ou autres. Ce sont les arrondis, les dégradés et d'autres aspects. => erreurs W3C */
 .coeur2
 {
-	margin-left: 285px;
+	margin-left: 310px;
 }
 
 /* Footer */
