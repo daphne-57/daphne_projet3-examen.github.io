@@ -262,20 +262,21 @@ flex-direction: row;
 }
 .blocmenu .blocvert
 {
-	width: 0;
-	height: 0;
+	width: 0px;
+	height: 0px;
 	z-index: 1;
 }
 .blocvert
 {
-	z-index: 1;
-	background: #fff;
-	width:60%;
-	height: 75px;
-	text-align: center;
-	border-radius: 0px 15px 15px 0px;
-	position: absolute;
-	margin-left: 90%;
+
+    z-index: 1;
+    background: #fff;
+    width: 60%;
+    height: 75px;
+    /* text-align: center; */
+    border-radius: 0px 15px 15px 0px;
+    /* position: absolute; */
+    /* margin-left: 90%;*/
 }
 .blocvert:hover .prix{
 	margin-right: -15%;
@@ -359,10 +360,11 @@ flex-direction: row;
   }
 .fa-circle-check
 {
-	height: 25px;
+	/*height: 25px;*/
 	color: #fff;
 	margin-top: 25px;
-	font-size: 0px;
+	/*font-size: 25px;*/
+	width: 25px;
 	/* Rond parasite */
 	/*-webkit-transition:  .5s ease-in;
 	transition:  .5s ease-in;*/
