@@ -110,7 +110,7 @@ flex-direction: row;
 	flex-wrap: wrap;
 }
 .Entree_list, .Plats_list, .Desserts_list {
-    animation: 3s ease 1 normal none running fadein;
+    animation: 4s ease 2 normal none running fadein;
     animation-fill-mode: backwards;
 	animation-name: fadein;
 	display: flex;
@@ -118,12 +118,13 @@ flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
 }
+
 @keyframes fadein {
     0% {
         opacity:0;
     }
-	20% {
-        opacity:0.2;
+	50% {
+        opacity:0.5;
     }
 
     100% {
@@ -134,8 +135,8 @@ flex-direction: row;
     0% {
         opacity:0;
     }
-	20% {
-        opacity:0.2;
+	50% {
+        opacity:0.5;
     }
 
     100% {
@@ -147,8 +148,8 @@ flex-direction: row;
     0% {
         opacity:0;
     }
-	20% {
-        opacity:0.2;
+	50% {
+        opacity:0.5;
     }
 
     100% {
@@ -159,8 +160,8 @@ flex-direction: row;
     0% {
         opacity:0;
     }
-	20% {
-        opacity:0.2;
+	50% {
+        opacity:0.5;
     }
 
     100% {
@@ -248,18 +249,12 @@ flex-direction: row;
 	font-size: 80%;
 	font-weight: 500;
 	position: relative;
-	margin-top: -35px;
-	margin-left: 90%;
+	margin-top: -32px;
 	padding-left: 0px;
+	margin-left: 90%;
 }
 /* bloc prix <- */
-.blocmenu:hover .prix
-{
-	margin-right: -15%;
-	position: relative;
-	margin-left: 75%;
-	margin-top: -35px;
-}
+
 .blocmenu .blocvert
 {
 	width: 0px;
@@ -268,31 +263,43 @@ flex-direction: row;
 }
 .blocvert
 {
-
     z-index: 1;
     background: #fff;
     width: 60%;
     height: 75px;
-    /* text-align: center; */
     border-radius: 0px 15px 15px 0px;
-    /* position: absolute; */
-    /* margin-left: 90%;*/
 }
 .blocvert:hover .prix{
 	margin-right: -15%;
 	position: relative;
 	margin-left: 90%;
-	margin-top: -14%;
+	margin-top: -32px;
 }
 .blocvert:hover{
 	margin-right: 100px;
 	margin-left:100%;
 }
-.blocvert .prix{
+.blocmenu:hover .prix{
 	margin-right: -15%;
 	position: relative;
-	margin-left: 90%;
-	margin-top: -14%;
+	margin-top: -32px;
+	animation-duration: 1s;
+	animation-name: glissement-prix;
+	animation-iteration-count: 1;
+	animation-direction: reverse;
+	animation-fill-mode:forwards;
+}
+@keyframes glissement-prix
+{
+	from
+	{
+		margin-left: 75%;
+
+	}
+	to
+	{
+		margin-left: 90%;
+	}
 }
 /* Animation bloc vert */
 .blocmenu:hover .blocvert
@@ -312,6 +319,7 @@ flex-direction: row;
 	animation-direction: reverse;
 	animation-fill-mode:forwards;
 }
+
 @keyframes glissement-blocvert
 {
 	from
@@ -325,6 +333,7 @@ flex-direction: row;
 		width: 0px;
 	}
 }
+
 /* Bloc vert qui s'ouvre au hover sur le bloc blanc mais le picto check est en dehors du bloc*/
 
 /* Animation check */

@@ -95,6 +95,7 @@ div .btnexplorer
 /* Main */
 /* Liste des restaurants */
 .conteneurblocresto{
+	position: relative;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -113,25 +114,28 @@ div .btnexplorer
 	font-size: 24px;
 	margin-left: 20px;
 }
-
 .blocresto
 {
+	position: relative;
 	height: 255px;
 	width: 355px;
-	margin: auto;
+
 	margin-bottom: 20px;
+	margin-left:10px;
+	margin-right: 10px;
 }
-
-.blocresto img
+.blocresto .blocnew
 {
-	width: 100%;
-	height: 175px;
-}
-
-.blocnew
-{
-    width: 100px;
+	position:absolute;
+	max-width: 100px;
     margin-left: 225px;
+	height: 30px;
+	background-color: #99e2d0;
+	margin-top: 20px;
+	margin-left: 70%;
+	padding-left: 2%;
+	padding-right: 2%;
+	z-index: 2;
 }
 
 /* Position absolute Coeur hover + dégradé + main +  */

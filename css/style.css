@@ -162,7 +162,7 @@ body
 }
 div .rech1
 {
-	max-width: 239px;
+	max-width: 150px;
 	margin: auto;
 
 }
@@ -371,6 +371,7 @@ div .btnexplorer
 {
 	padding-top: 60px;
 	font-size: 22px;
+	margin-left: 20px;
 }
 /* Bloc restaurant */    
 .blocresto
@@ -378,11 +379,13 @@ div .btnexplorer
 	position: relative;
 	height: 255px;
 	width: 355px;
-	margin: auto;
+
 	margin-bottom: 20px;
 	background: #fff;
 	border-radius: 25px;
 	box-shadow: 0px 3px 10px 0px #d3d1d1;
+	margin-left:10px;
+	margin-right: 10px;
 }
 .blocresto a
 {
@@ -406,7 +409,7 @@ div .btnexplorer
 	height: 30px;
 	background-color: #99e2d0;
 	margin-top: 20px;
-	margin-left: 50%;
+	margin-left: 60%;
 	padding-left: 2%;
 	padding-right: 2%;
 	z-index: 2;

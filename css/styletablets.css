@@ -44,7 +44,12 @@
 	flex-direction: row;
 	margin-left: 40px;
 }
+div .rech1
+{
+	max-width: 195px;
+	margin: auto;
 
+}
 
 .rech1 i
 {
@@ -191,6 +196,7 @@ div .btnexplorer
 /* Liste des restaurants */
 
 .conteneurblocresto{
+	position: relative;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -213,28 +219,27 @@ div .btnexplorer
 /* Bloc restaurant */    
 .blocresto
 {
-	/*width: 40%;
-	margin-bottom: 50px;*/
+	position: relative;
 	height: 255px;
 	width: 355px;
-	margin: auto;
+
 	margin-bottom: 20px;
+	margin-left:10px;
+	margin-right: 10px;
 }
-/*
-.blocresto img
+.blocresto .blocnew
 {
-	height: 175px;
-	object-fit: cover;
-	border-radius: 25px 25px 0px 0px;
-}*/
-
-.blocnew
-{
-    width: 100px;
+	position:absolute;
+	max-width: 100px;
     margin-left: 225px;
+	height: 30px;
+	background-color: #99e2d0;
+	margin-top: 20px;
+	margin-left: 70%;
+	padding-left: 2%;
+	padding-right: 2%;
+	z-index: 2;
 }
-
-
 /* Position absolute Coeur hover + dégradé + main +  */
 .coeur1
 {
