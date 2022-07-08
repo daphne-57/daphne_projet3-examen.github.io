@@ -85,7 +85,6 @@ flex-direction: row;
 	margin-top: 45px;
 	font-size: 22px;
 	margin-left: 10px;
-
 }
 /* Entréé, plats, dessert, sous-titre */      
 .titreplats
@@ -103,69 +102,94 @@ flex-direction: row;
 	color: #000;
 	font-weight: 400;
 }
-/*Proposition d'animations*/
-.Entree_list {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-.Entree_list, .Plats_list, .Desserts_list {
-    animation: 4s ease 2 normal none running fadein;
-    animation-fill-mode: backwards;
-	animation-name: fadein;
+/* Proposition d'animations */
+/* animation: name | duration | timing-function | delay | iteration-count | direction | fill-mode; */
+/* nom_animation | animation-durée | fonction de synchronisation d'animation | délai d'animation | nombre d'itérations d'animation | animation-direction | mode de remplissage d'animation | animation-play-state */
+
+main .entrees_list {
+    animation: 1s ease-in-out 0.2s normal both running fadein;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
+main .plats_list {
+    animation: 1s ease-in-out 0.6s normal both running fadein;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+main .desserts_list {
+    animation: 1s ease-in-out 0.9s normal both running fadein;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
 @keyframes fadein {
     0% {
         opacity:0;
+		margin-top: -10px;
+
     }
 	50% {
         opacity:0.5;
+
     }
 
     100% {
         opacity:1;
+		margin-top: 0px;
     }
 }
 @-moz-keyframes fadein { /* sur Firefox */
     0% {
         opacity:0;
+		margin-top: -10px;
+
     }
 	50% {
         opacity:0.5;
+
     }
 
     100% {
         opacity:1;
+		margin-top: 0px;
     }
 }
-
 @-webkit-keyframes fadein { /* sur Safari et Chrome */
     0% {
         opacity:0;
+		margin-top: -10px;
+
     }
 	50% {
         opacity:0.5;
+
     }
 
     100% {
         opacity:1;
+		margin-top: 0px;
     }
 }
 @-o-keyframes fadein { /* sur Opera */
     0% {
         opacity:0;
+		margin-top: -10px;
+
     }
 	50% {
         opacity:0.5;
+
     }
 
     100% {
         opacity:1;
+		margin-top: 0px;
     }
 }
 /* Plat à selectionner */  
