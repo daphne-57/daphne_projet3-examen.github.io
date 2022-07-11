@@ -44,10 +44,10 @@ body{
 }
 main .conteneurmenus1, .conteneurmenus3, .conteneurmenus4
 {
-		/* pas de hauteur bloquée juste un padding bottome pour avoir une marge minimum */
-		padding-bottom: 50px;
-		padding-left: 20px;
-		padding-right: 20px;
+	/* pas de hauteur bloquée juste un padding bottome pour avoir une marge minimum */
+	padding-bottom: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
 	background-color: #f6f6f6;
 	opacity: 0.99;
 	margin-top: -120px;
@@ -56,10 +56,10 @@ main .conteneurmenus1, .conteneurmenus3, .conteneurmenus4
 }
 main .conteneurmenus2
 {
-		/* pas de hauteur bloquée juste un padding bottome pour avoir une marge minimum */
-		padding-bottom: 50px;
-		padding-left: 20px;
-		padding-right: 20px;
+	/* pas de hauteur bloquée juste un padding bottome pour avoir une marge minimum */
+	padding-bottom: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
 	background-color: #f6f6f6;
 	opacity: 0.99;
 	margin-top: -120px;
